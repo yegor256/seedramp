@@ -2,19 +2,22 @@
   box-sizing: border-box;
   font-family: monospace;
 }
+
 a {
   color: inherit;
 }
+
 p {
-  margin-top: 2em;
   margin-bottom: 2em;
+  margin-top: 2em;
 }
+
 article {
-  padding: 2em;
-  width: 20em;
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
+  padding: 2em;
+  width: 20em;
 }
 
 %noprint {
@@ -22,4 +25,5 @@ article {
     display: none;
   }
 }
+
 .noprint { @extend %noprint; }
