@@ -1,3 +1,4 @@
+@import 'colors';
 @import 'basics';
 
 * {
@@ -15,8 +16,8 @@ p {
 }
 
 article {
-  width: 24 * $em;
   text-align: center;
+  width: 24 * $em;
 }
 
 @media print {
@@ -26,10 +27,10 @@ article {
 }
 
 hr {
-  width: 25%;
-  margin-top: 6em;
-  margin-bottom: 6em;
-  height: .1 * $em;
-  background-color: black;
+  background-color: $black;
   border: 0;
+  height: .1 * $em;
+  margin-bottom: 6em;
+  margin-top: 6em;
+  width: 25%;
 }
