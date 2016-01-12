@@ -1,0 +1,25 @@
+language: ruby
+sudo: false
+branches:
+  only:
+  - master
+before_install:
+- set -e
+- git config --global user.email "travis@seedramp.com"
+- git config --global user.name "travis"
+- openssl aes-256-cbc -K $encrypted_b3d57c6f91bb_key -iv $encrypted_b3d57c6f91bb_iv -in id_rsa.enc -out id_rsa -d
+- mv id_rsa ~/.ssh
+- chmod 600 ~/.ssh/id_rsa
+install:
+- travis_retry bundle install
+script:
+- make
+- git checkout git@github.com:yegor256/seedramp.git tmp
+- cd tmp
+- rm -rf *
+- mv ../target .
+- git add .
+- git commit -am 'deploy  '
+- git push origin gh-pages
+- cd ..
+- rm -rf tmp
