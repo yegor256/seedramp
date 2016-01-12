@@ -6,21 +6,24 @@ target:
 scsslint:
 	scss-lint -c .scss-lint.yml 
 
-cname: target
+target/CNAME: target
 	echo "www.seedramp.com" > target/CNAME
 
-robots.txt: target
+target/robots.txt: target
 	echo "" > target/robots.txt
 
-images: target
+target/images/logo.svg: target
 	cp -R images target
 
-sass: target sass/*.scss
+target/index.html: target pages/*.html
+	cp pages/* target
+
+target/css/index.css: target sass/*.scss
 	mkdir -p target/css
 	sass --style=compressed --sourcemap=none sass/index.scss target/css/index.css 
 	sass --style=compressed --sourcemap=none sass/safe.scss target/css/safe.css 
 
-site: sass cname images robots.txt
+site: target/index.html target/css/index.css target/CNAME target/images/logo.svg target/robots.txt
 
 lint: scsslint
 
