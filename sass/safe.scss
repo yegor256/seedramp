@@ -1,8 +1,9 @@
+@import 'sizes';
 @import 'colors';
 @import 'basics';
 
 * {
-  font-size: 16px;
+  font-size: .7 * $em;
 }
 
 .par {
@@ -11,8 +12,7 @@
 }
 
 article {
-  padding: 2em;
-  width: 45em;
+  width: 32 * $em;
   @media print {
     padding: 0;
     width: 100%;
@@ -55,12 +55,10 @@ p {
   }
 
   @media print {
-    .data {
-      border-bottom: 1px solid $black;
-      color: lighten($gray, 25);
-      font-size: 60%;
-      line-height: 3em;
-      min-width: 300px;
-    }
+    border-bottom: 1px solid $black;
+    color: lighten($gray, 25);
+    font-size: 60%;
+    line-height: 3em;
+    min-width: 10 * $em;
   }
 }
