@@ -19,7 +19,7 @@ script:
 - rm -rf *
 - mv ../target/* .
 - git add .
-- git commit -am 'deploy'
+- git commit -am 'deploy' --allow-empty
 - git push origin gh-pages
 - cd ..
 - rm -rf tmp
