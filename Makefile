@@ -18,6 +18,7 @@ target/images/logo.svg: target
 target/index.html: target pages/*.haml
 	haml --style=ugly pages/index.haml > target/index.html
 	haml --style=ugly pages/safe.haml > target/safe.html
+	haml --style=ugly pages/consent.haml > target/consent.html
 
 target/css/index.css: target sass/*.scss
 	mkdir -p target/css

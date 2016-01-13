@@ -1,0 +1,39 @@
+%html
+  %head
+    %title Consent
+    %link{:type => 'text/css', :href => 'css/safe.css', :rel => 'stylesheet'}
+    = Haml::Engine.new(File.read('pages/_head.haml')).render
+    = Haml::Engine.new(File.read('pages/_ga.haml')).render
+  %body
+    %article
+      %div{ :class => 'par' }
+        %a{ :href => 'index.html' }
+          %img{ :src => 'images/logo.svg', :alt => 'logo', :class => 'noprint', :style => 'width:80px;height:80px;' }
+      %h1
+        Signed Release Consent for Video Interview
+      %p
+        I agree to participate in the interview (the "Interview") organized by
+        SeedRamp LLC (the "SeedRamp").
+      %p
+        I hereby consent to the photographing of myself,
+        the recording of my voice, and the use of these photographs and/or
+        recordings singularly or in conjunction with other photographs
+        and/or recordings for educational and promotional purposes.
+        I understand that the term "photograph" as used herein
+        encompasses both still photographs and motion picture footage.
+      %p
+        I further consent to the reproduction and/or authorization
+        by SeedRamp to publish said photographs and recordings of
+        my voice on the Internet. Further, I understand that others,
+        with or without the consent of SeedRamp may use
+        and/or reproduce such photographs and recordings.
+      %p
+        I hereby release SeedRamp, and any of his/her associated or
+        affiliated faculty and institution from all claims of every
+        kind on account of such use.
+      %p
+        <span class="data">name, title</span><br/>
+        <span class="data">company name</span><br/>
+        <span class="data">address</span><br/>
+        <span class="data">email</span>
+
