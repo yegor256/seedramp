@@ -1,0 +1,43 @@
+%html
+  %head
+    %title SeedRamp
+    %link{:type => 'text/css', :href => 'css/index.css', :rel => 'stylesheet'}
+    = Haml::Engine.new(File.read('pages/_head.haml')).render
+    = Haml::Engine.new(File.read('pages/_ga.haml')).render
+  %body
+    %article
+      %p
+        %a{ :href => 'index.html' }
+          %img{ :src => 'images/logo.svg', :alt => 'logo', :style => 'width:110px;height:110px;' }
+      %p
+        <strong>SeedRamp</strong> is a venture fund.
+      %p
+        We give you cash to cover the next calendar month
+        (up to <strong>$20k</strong>), you give us
+        equity via <a href="safe.html">SAFE</a>.
+      %p
+        We make investment decisions in <strong>24 hours</strong>,
+        after a one-hour interview.
+        <a href="https://calendly.com/yegor256/seedramp">Schedule</a>!
+      %p
+        Read
+        <a href="http://www.yegor256.com/2015/12/16/investors-are-too-scared.html">this</a>.
+      %p
+      %hr
+      %p
+        You schedule an interview.
+        You pitch, we ask. Then, we discuss.
+        Then, we either give you a check or explain
+        why not.
+        We <strong>video</strong> record the entire session and publish
+        it online.
+      %p
+        We don't care what you do with the money.
+        We don't sit on your board and we
+        <strong>don't control</strong> you anyhow.
+      %p
+        You may come back to us for more money,
+        in a month, not earlier. Also, if we reject you,
+        don't hesitate to come back
+        <strong>in a month</strong>.
+      = Haml::Engine.new(File.read('pages/_tail.haml')).render
