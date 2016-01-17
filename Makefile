@@ -16,7 +16,7 @@ target/images/logo.svg: target
 	cp -R images target
 
 target/%.html : pages/%.haml target
-	haml --style=ugly $< > $@
+	haml --style=indented $< > $@
 
 target/css/%.css: sass/%.scss target
 	mkdir -p target/css
