@@ -1,9 +1,13 @@
 @import 'colors';
 @import 'basics';
 
-article {
+%container {
   text-align: center;
   width: 24 * $em;
+}
+
+article {
+  @extend %container;
 }
 
 @media print {
@@ -22,11 +26,11 @@ hr {
 }
 
 .video {
-  @extend article;
+  @extend %container;
   position: relative;
   width: 48 * $em;
 
-  .col{
+  .col {
     float: left;
     margin: 0 auto;
     max-width: 100%;
@@ -35,19 +39,19 @@ hr {
     width: .3 * 48 * $em;
 
     iframe {
-      padding: 0;
       border: 0;
+      padding: 0;
       width: 100%;
     }
   }
 }
 
 button {
+  background-color: $blue;
+  border: 0;
+  border-radius: .2 * $em;
   color: $white;
   cursor: pointer;
   font-size: $em;
   padding: .5 * $em;
-  border-radius: .2 * $em;
-  background-color: $blue;
-  border: 0;
 }
