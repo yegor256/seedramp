@@ -6,9 +6,7 @@
     = Haml::Engine.new(File.read('pages/_ga.haml')).render
   %body
     %article
-      %div{ :class => 'par' }
-        %a{ :href => 'index.html' }
-          %img{ :src => 'images/logo.svg', :alt => 'logo', :class => 'noprint', :style => 'width:80px;height:80px;' }
+      = Haml::Engine.new(File.read('pages/_logo.haml')).render
       %h1
         Release Consent for Video Interview
       %p

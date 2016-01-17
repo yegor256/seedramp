@@ -1,0 +1,25 @@
+%html
+  %head
+    %title FAQ
+    %link{:type => 'text/css', :href => 'css/safe.css', :rel => 'stylesheet'}
+    = Haml::Engine.new(File.read('pages/_head.haml')).render
+    = Haml::Engine.new(File.read('pages/_ga.haml')).render
+  %body
+    %article
+      = Haml::Engine.new(File.read('pages/_logo.haml')).render
+      %h1 How does it work?
+      %p
+        You schedule an interview.
+        You pitch, we ask. Then, we discuss.
+        Then, we either give you a check or explain
+        why not.
+        We video record the entire session and
+        publish it online. You will have to sign this
+        <a href="consent.html">consent</a> before we start talking.
+      %p
+        We don't care what you do with the money.
+        We don't sit on your board and we don't control you anyhow.
+      %p
+        You may come back to us for more money,
+        in a month, not earlier. Also, if we reject you,
+        don't hesitate to come back in a month.

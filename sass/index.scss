@@ -1,20 +1,6 @@
 @import 'colors';
 @import 'basics';
 
-* {
-  box-sizing: border-box;
-  font-family: monospace;
-}
-
-a {
-  color: inherit;
-}
-
-p {
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
-
 article {
   text-align: center;
   width: 24 * $em;
@@ -35,3 +21,33 @@ hr {
   width: 25%;
 }
 
+.video {
+  @extend article;
+  position: relative;
+  width: 48 * $em;
+
+  .col{
+    float: left;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: $em;
+    position: relative;
+    width: .3 * 48 * $em;
+
+    iframe {
+      padding: 0;
+      border: 0;
+      width: 100%;
+    }
+  }
+}
+
+button {
+  color: $white;
+  cursor: pointer;
+  font-size: $em;
+  padding: .5 * $em;
+  border-radius: .2 * $em;
+  background-color: $blue;
+  border: 0;
+}
