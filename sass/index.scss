@@ -1,13 +1,9 @@
 @import 'colors';
 @import 'basics';
 
-%container {
+article {
   text-align: center;
   width: 24 * $em;
-}
-
-article {
-  @extend %container;
 }
 
 @media print {
@@ -28,7 +24,14 @@ hr {
 .video {
   @extend %container;
   position: relative;
+  text-align: center;
   width: 48 * $em;
+
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
 
   .col {
     float: left;
