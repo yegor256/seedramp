@@ -15,18 +15,17 @@ target/robots.txt: target
 target/images/logo.svg: target
 	cp -R images target
 
-target/index.html: target pages/*.haml
-	haml --style=ugly pages/index.haml > target/index.html
-	haml --style=ugly pages/safe.haml > target/safe.html
-	haml --style=ugly pages/consent.haml > target/consent.html
-	haml --style=ugly pages/faq.haml > target/faq.html
+target/%.html : pages/%.haml target
+	haml --style=ugly $< > $@
 
-target/css/index.css: target sass/*.scss
+target/css/%.css: sass/%.scss target
 	mkdir -p target/css
-	sass --style=compressed --sourcemap=none sass/index.scss target/css/index.css 
-	sass --style=compressed --sourcemap=none sass/safe.scss target/css/safe.css 
+	sass --style=compressed --sourcemap=none $< $@
 
-site: target/index.html target/css/index.css target/CNAME target/images/logo.svg target/robots.txt
+HTML=target/index.html target/faq.html target/consent.html target/safe.html
+CSS=target/css/index.css target/css/safe.css
+
+site: $(HTML) $(CSS) target/CNAME target/images/logo.svg target/robots.txt
 
 lint: scsslint
 
