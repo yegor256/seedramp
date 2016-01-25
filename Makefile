@@ -22,7 +22,7 @@ target/css/%.css: sass/%.scss target
 	mkdir -p target/css
 	sass --style=compressed --sourcemap=none $< $@
 
-HTML=target/index.html target/faq.html target/consent.html target/safe.html
+HTML=target/404.html target/index.html target/faq.html target/consent.html target/safe.html
 CSS=target/css/index.css target/css/safe.css
 
 site: $(HTML) $(CSS) target/CNAME target/images/logo.svg target/robots.txt
