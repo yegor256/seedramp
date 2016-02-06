@@ -1,3 +1,7 @@
+HTML = $(patsubst pages/%.haml, target/%.html, $(wildcard pages/[^_]*.haml))
+CSS = $(patsubst sass/%.scss, target/css/%.css, $(wildcard sass/[^_]*.scss))
+IMAGES = $(patsubst images/%, target/images/%, $(wildcard images/*))
+
 all: target lint site
 
 target:
@@ -12,19 +16,18 @@ target/CNAME: target
 target/robots.txt: target
 	echo "" > target/robots.txt
 
-target/logo.svg: target
-	cp -R images/* target
+target/images/%: images/% target
+	mkdir -p target/images
+	cp $< $@
 
 target/%.html : pages/%.haml target
 	haml --style=indented $< > $@
 
-target/%.css: sass/%.scss target
+target/css/%.css: sass/%.scss target
+	mkdir -p target/css
 	sass --style=compressed --sourcemap=none $< $@
 
-HTML=target/404.html target/index.html target/faq.html target/consent.html target/safe.html
-CSS=target/index.css target/safe.css
-
-site: $(HTML) $(CSS) target/CNAME target/logo.svg target/robots.txt
+site: $(HTML) $(CSS) $(IMAGES) target/CNAME target/robots.txt
 
 lint: scsslint
 
