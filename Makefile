@@ -1,3 +1,4 @@
+URL = www.seedramp.com
 HTML = $(patsubst pages/%.haml, target/%.html, $(wildcard pages/[^_]*.haml))
 CSS = $(patsubst sass/%.scss, target/css/%.css, $(wildcard sass/[^_]*.scss))
 IMAGES = $(patsubst images/%, target/images/%, $(wildcard images/*))
@@ -11,7 +12,7 @@ scsslint:
 	scss-lint -c .scss-lint.yml 
 
 target/CNAME: target
-	echo "www.seedramp.com" > target/CNAME
+	echo "$(URL)" > target/CNAME
 
 target/robots.txt: target
 	echo "" > target/robots.txt
