@@ -12,20 +12,19 @@ target/CNAME: target
 target/robots.txt: target
 	echo "" > target/robots.txt
 
-target/images/logo.svg: target
-	cp -R images target
+target/logo.svg: target
+	cp -R images/* target
 
 target/%.html : pages/%.haml target
 	haml --style=indented $< > $@
 
-target/css/%.css: sass/%.scss target
-	mkdir -p target/css
+target/%.css: sass/%.scss target
 	sass --style=compressed --sourcemap=none $< $@
 
 HTML=target/404.html target/index.html target/faq.html target/consent.html target/safe.html
-CSS=target/css/index.css target/css/safe.css
+CSS=target/index.css target/safe.css
 
-site: $(HTML) $(CSS) target/CNAME target/images/logo.svg target/robots.txt
+site: $(HTML) $(CSS) target/CNAME target/logo.svg target/robots.txt
 
 lint: scsslint
 

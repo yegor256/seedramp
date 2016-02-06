@@ -1,14 +1,14 @@
 %html
   %head
     %title SeedRamp
-    %link{:type => 'text/css', :href => 'css/index.css', :rel => 'stylesheet'}
+    %link{:type => 'text/css', :href => 'index.css', :rel => 'stylesheet'}
     = Haml::Engine.new(File.read('pages/_head.haml')).render
     = Haml::Engine.new(File.read('pages/_ga.haml')).render
   %body
     %article
       %p
         %a{ :href => 'index.html' }
-          %img{ :src => 'images/logo.svg', :alt => 'logo', :style => 'width:110px;height:110px;' }
+          %img{ :src => 'logo.svg', :alt => 'logo', :style => 'width:110px;height:110px;' }
       %p
         <strong>SeedRamp</strong> is a venture fund.
       %p
