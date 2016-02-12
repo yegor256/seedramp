@@ -6,11 +6,10 @@
     = Haml::Engine.new(File.read('pages/_ga.haml')).render
   %body
     %article
+      = Haml::Engine.new(File.read('pages/_logo.haml')).render
       %p
-        %a{ :href => 'index.html' }
-          %img{ :src => 'images/logo.svg', :alt => 'logo', :style => 'width:110px;height:110px;' }
-      %p
-        <strong>SeedRamp</strong> is a venture fund.
+        %strong SeedRamp
+        is a venture fund.
       %p
         We give you cash to cover the next calendar month
         (up to <strong>$20k</strong>), you give us
@@ -35,6 +34,8 @@
         %iframe{ :class => 'video', :src => 'https://www.youtube.com/embed/LYKGu37J8dg?controls=2', :allowfullscreen => '' }
       %div.col
         %iframe{ :class => 'video', :src => 'https://www.youtube.com/embed/ouYq6Ci3Ugk?controls=2', :allowfullscreen => '' }
+      %div.col
+        %iframe{ :class => 'video', :src => 'https://www.youtube.com/embed/20stkcHz4cg?controls=2', :allowfullscreen => '' }
       %div.col
         more coming soon...
 
