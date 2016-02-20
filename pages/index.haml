@@ -1,7 +1,7 @@
 %html
   %head
     %title SeedRamp
-    %link{:type => 'text/css', :href => 'css/index.css', :rel => 'stylesheet'}
+    %link{:type=>'text/css', :href=>'css/index.css', :rel=>'stylesheet'}
     = Haml::Engine.new(File.read('pages/_head.haml')).render
     = Haml::Engine.new(File.read('pages/_ga.haml')).render
   %body
@@ -17,27 +17,34 @@
       %p
         We make investment decisions in <strong>24 hours</strong>,
         after a one-hour interview (<a href="faq.html">FAQ</a>).
-      %p{ :style => 'text-align:center' }
-        %a{ :href => 'https://calendly.com/yegor256/seedramp', :title => 'Schedule it right now' }
+      %p{:style=>'text-align:center' }
+        %a{:href=>'https://calendly.com/yegor256/seedramp', :title=>'Schedule it right now', :style=>'text-decoration:none'}
           %button Schedule
+        %br
+        %span{ :style=>'font-size:0.6em;color:gray;' }
+          Clicking this button you automatically
+          accept terms and conditions of this
+          %a{:href=>"consent.html"} Release Consent for Video Interview
 
     %div.video
       %div.col
-        %iframe{ :class => 'video', :src => 'https://www.youtube.com/embed/rXUz5--si1s?controls=2', :allowfullscreen => '' }
+        %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/rXUz5--si1s?controls=2', :allowfullscreen=>'' }
       %div.col
-        %iframe{ :class => 'video', :src => 'https://www.youtube.com/embed/TbjTdJdR5AQ?controls=2', :allowfullscreen => '' }
+        %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/TbjTdJdR5AQ?controls=2', :allowfullscreen=>'' }
       %div.col
-        %iframe{ :class => 'video', :src => 'https://www.youtube.com/embed/XdXLyhA8SyM?controls=2', :allowfullscreen => '' }
+        %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/XdXLyhA8SyM?controls=2', :allowfullscreen=>'' }
       %div.col
-        %iframe{ :class => 'video', :src => 'https://www.youtube.com/embed/EQ4IpbEGSZo?controls=2', :allowfullscreen => '' }
+        %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/EQ4IpbEGSZo?controls=2', :allowfullscreen=>'' }
       %div.col
-        %iframe{ :class => 'video', :src => 'https://www.youtube.com/embed/LYKGu37J8dg?controls=2', :allowfullscreen => '' }
+        %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/LYKGu37J8dg?controls=2', :allowfullscreen=>'' }
       %div.col
-        %iframe{ :class => 'video', :src => 'https://www.youtube.com/embed/ouYq6Ci3Ugk?controls=2', :allowfullscreen => '' }
+        %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/ouYq6Ci3Ugk?controls=2', :allowfullscreen=>'' }
       %div.col
-        %iframe{ :class => 'video', :src => 'https://www.youtube.com/embed/20stkcHz4cg?controls=2', :allowfullscreen => '' }
+        %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/20stkcHz4cg?controls=2', :allowfullscreen=>'' }
       %div.col
-        %iframe{ :class => 'video', :src => 'https://www.youtube.com/embed/lhzRDNSic0A?controls=2', :allowfullscreen => '' }
+        %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/lhzRDNSic0A?controls=2', :allowfullscreen=>'' }
+      %div.col
+        %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/TkRj6Iadk_w?controls=2', :allowfullscreen=>'' }
       %div.col
         more coming soon...
 

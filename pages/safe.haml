@@ -1,7 +1,7 @@
 %html
   %head
     %title SAFE
-    %link{:type => 'text/css', :href => 'css/safe.css', :rel => 'stylesheet'}
+    %link{:type=>'text/css', :href=>'css/safe.css', :rel=>'stylesheet'}
     = Haml::Engine.new(File.read('pages/_head.haml')).render
     = Haml::Engine.new(File.read('pages/_ga.haml')).render
   %body
@@ -31,12 +31,12 @@
 
       %h1 Definitions
 
-      %p{ :class => 'sect', :id => 'capital-stock' }
+      %p{ :class=>'sect', :id=>'capital-stock' }
         "Capital Stock" means the capital stock of
         the <a href="#company">Company</a>,
         including, without limitation, the "Common Stock"
         and the "Preferred Stock."
-      %p{ :class => 'sect', :id => 'change-of-control' }
+      %p{ :class=>'sect', :id=>'change-of-control' }
         "Change of Control" means (1) a transaction or series
         of related transactions in which any "person" or "group"
         (within the meaning of Section 13(d) and 14(d) of the
@@ -56,7 +56,7 @@
         securities of the <a href="#company">Company</a> or such other surviving or resulting
         entity or (3) a sale, lease or other disposition of all or
         substantially all of the assets of the <a href="#company">Company</a>.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         "Company Capitalization" means the sum, as of immediately
         prior to the <a href="equity-financing">Equity Financing</a>, of: (1) all shares of
         <a href="#capital-stock">Capital Stock</a> (on an as-converted basis) issued and outstanding,
@@ -68,7 +68,7 @@
         any equity incentive or similar plan of the <a href="#company">Company</a>,
         and/or any equity incentive or similar plan to be created
         or increased in connection with the <a href="equity-financing">Equity Financing</a>.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         "Distribution" means the transfer to holders of <a href="#capital-stock">Capital Stock</a>
         by reason of their ownership thereof of cash or other property
         without consideration whether by way of dividend or otherwise,
@@ -83,23 +83,23 @@
         of such service provider's employment or services; or
         (2) repurchases of <a href="#capital-stock">Capital Stock</a> in connection with
         the settlement of disputes with any stockholder.
-      %p{ :class => 'sect', :id => 'dissolution-event' }
+      %p{ :class=>'sect', :id=>'dissolution-event' }
         "Dissolution Event" means (1) a voluntary termination
         of operations, (2) a general assignment for the benefit
         of the <a href="#company">Company</a>'s creditors or (3) any other liquidation,
         dissolution or winding up of the <a href="#company">Company</a> (excluding
         a <a href="#liquidity-event">Liquidity Event</a>), whether voluntary or involuntary.
-      %p{ :class => 'sect', :id => 'equity-financing' }
+      %p{ :class=>'sect', :id=>'equity-financing' }
         "Equity Financing" means a bona fide transaction or series of
         transactions with the principal purpose of raising capital,
         pursuant to which the <a href="#company">Company</a> issues and sells
         Preferred Stock at a fixed pre-money valuation.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         "Initial Public Offering" means the closing of the
         <a href="#company">Company</a>'s first firm commitment underwritten
         initial public offering of Common Stock pursuant
         to a registration statement filed under the Securities Act.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         "Liquidity Capitalization" means the number, as of
         immediately prior to the <a href="#liquidity-event">Liquidity Event</a>, of shares of
         <a href="#capital-stock">Capital Stock</a> (on an as-converted basis) outstanding,
@@ -109,14 +109,14 @@
         available for future grant under any equity incentive or
         similar plan; (2) this instrument; (3) other Safes;
         and (4) convertible promissory notes.
-      %p{ :class => 'sect', :id => 'liquidity-event' }
+      %p{ :class=>'sect', :id=>'liquidity-event' }
         "Liquidity Event" means a
         <a href="#change-of-control">Change of Control</a>
         or an Initial Public Offering.
-      %p{ :class => 'sect', :id => 'liquidity-price' }
+      %p{ :class=>'sect', :id=>'liquidity-price' }
         "Liquidity Price" means the price per share equal to
         the Valuation Cap divided by the Liquidity Capitalization.
-      %p{ :class => 'sect', :id => 'pro-rata-rights-agreement' }
+      %p{ :class=>'sect', :id=>'pro-rata-rights-agreement' }
         "Pro Rata Rights Agreement" means a written agreement
         between the <a href="#company">Company</a> and the <a href="#investor">Investor</a> (and holders of
         other Safes, as appropriate) giving the <a href="#investor">Investor</a>
@@ -134,7 +134,7 @@
         shares of <a href="#capital-stock">Capital Stock</a>, similar in form and content to
         this instrument, purchased by investors for the purpose of
         funding the <a href="#company">Company</a>'s business operations.
-      %p{ :class => 'sect', :id => 'safe-preferred-stock' }
+      %p{ :class=>'sect', :id=>'safe-preferred-stock' }
         "Safe Preferred Stock" means the shares of a series of
         Preferred Stock issued to the <a href="#investor">Investor</a>
         in an <a href="equity-financing">Equity Financing</a>,
@@ -145,10 +145,10 @@
         price-based anti-dilution protection, which will equal the
         Safe Price; and (2) the basis for any dividend rights,
         which will be based on the Safe Price.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         "Safe Price" means the price per share equal to the
         Valuation Cap divided by the <a href="#company">Company</a> Capitalization.
-      %p{ :class => 'sect', :id => 'standard-preferred-stock' }
+      %p{ :class=>'sect', :id=>'standard-preferred-stock' }
         "Standard Preferred Stock" means the shares of a series
         of Preferred Stock issued to the investors investing new
         money in the <a href="#company">Company</a> in connection with the initial closing
@@ -156,7 +156,7 @@
 
       %h1 Equity Financing
 
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         If there is an <a href="equity-financing">Equity Financing</a>
         before the expiration
         or termination of this instrument, the <a href="#company">Company</a> will
@@ -168,7 +168,7 @@
         (2) a number of shares of <a href="#safe-preferred-stock">Safe Preferred Stock</a> equal
         to the <a href="purchase-amount">Purchase Amount</a> divided by the Safe Price,
         if the pre-money valuation is greater than the Valuation Cap.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         In connection with the issuance of <a href="#standard-preferred-stock">Standard Preferred Stock</a>
         or <a href="#safe-preferred-stock">Safe Preferred Stock</a>, as applicable, by the
         <a href="#company">Company</a> to the <a href="#investor">Investor</a> pursuant to &sect;1:
@@ -190,7 +190,7 @@
 
       %h1 Liquidity Event
 
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         If there is a <a href="#liquidity-event">Liquidity Event</a> before the expiration
         or termination of this instrument, the <a href="#investor">Investor</a> will,
         at its option, either (1) receive a cash payment equal
@@ -199,7 +199,7 @@
         of shares of Common Stock equal to the <a href="purchase-amount">Purchase Amount</a>
         divided by the <a href="#liquidity-price">Liquidity Price</a>, if the <a href="#investor">Investor</a>
         fails to select the cash option.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         In connection with &sect;3(1), the <a href="purchase-amount">Purchase Amount</a> will
         be due and payable by the <a href="#company">Company</a> to the <a href="#investor">Investor</a>
         immediately prior to, or concurrent with, the consummation
@@ -212,7 +212,7 @@
         and the Cash-Out Investors will automatically receive
         the number of shares of Common Stock equal to the remaining
         unpaid purchase amount divided by the <a href="#liquidity-price">Liquidity Price</a>.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         In connection with a <a href="#change-of-control">Change of Control</a>
         intended to qualify as a tax-free reorganization, the <a href="#company">Company</a> may reduce,
         pro rata, the purchase amounts payable to the Cash-Out Investors
@@ -226,19 +226,19 @@
 
       %h1 Dissolution Event
 
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         If there is a <a href="#dissolution-event">Dissolution Event</a> before this instrument
         expires or terminates, the <a href="#company">Company</a> will pay an amount
         equal to the <a href="purchase-amount">Purchase Amount</a>,
         due and payable to the <a href="#investor">Investor</a>
         immediately prior to, or concurrent with, the consummation
         of the <a href="#dissolution-event">Dissolution Event</a>.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         The <a href="purchase-amount">Purchase Amount</a> will be paid prior and in preference
         to any Distribution of any of the assets of the <a href="#company">Company</a>
         to holders of outstanding <a href="#capital-stock">Capital Stock</a> by reason of
         their ownership thereof.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         If immediately prior to the consummation of the
         Dissolution Event, the assets of the <a href="#company">Company</a> legally
         available for distribution to the <a href="#investor">Investor</a> and all holders
@@ -253,7 +253,7 @@
 
       %h1 Termination
 
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         This instrument will expire and terminate (without relieving
         the <a href="#company">Company</a> of any obligations arising from a prior breach
         of or non-compliance with this instrument) upon either
@@ -265,13 +265,13 @@
 
       %h1 Company Representations
 
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         The <a href="#company">Company</a> is a corporation duly organized, validly
         existing and in good standing under the laws of the state
         of its incorporation, and has the power and authority to own,
         lease and operate its properties and carry on its business
         as now conducted.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         The execution, delivery and performance by the <a href="#company">Company</a> of
         this instrument is within the power of the <a href="#company">Company</a> and,
         other than with respect to the actions to be taken when
@@ -291,7 +291,7 @@
         individually, or together with all such violations or defaults,
         could reasonably be expected to have a material adverse effect
         on the <a href="#company">Company</a>.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         The performance and consummation of the transactions
         contemplated by this instrument do not and will not:
         (1) violate any material judgment, statute, rule or regulation
@@ -302,14 +302,14 @@
         or revenue of the <a href="#company">Company</a> or the suspension, forfeiture, or
         nonrenewal of any material permit, license or authorization
         applicable to the <a href="#company">Company</a>, its business or operations.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         No consents or approvals are required in connection with
         the performance of this instrument, other than: (1) the
         <a href="#company">Company</a>'s corporate approvals; (2) any qualifications or
         filings under applicable securities laws; and (3) necessary
         corporate approvals for the authorization of <a href="#capital-stock">Capital Stock</a>
         issuable pursuant to &sect;1.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         To its knowledge, the <a href="#company">Company</a> owns or possesses (or can
         obtain on commercially reasonable terms) sufficient legal
         rights to all patents, trademarks, service marks, trade names,
@@ -321,7 +321,7 @@
 
       %h1 Investor Representations
 
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         The <a href="#investor">Investor</a> has full legal capacity, power and authority
         to execute and deliver this instrument and to perform
         its obligations hereunder. This instrument constitutes
@@ -330,7 +330,7 @@
         insolvency or other laws of general application relating
         to or affecting the enforcement of creditors' rights generally
         and general principles of equity.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         The <a href="#investor">Investor</a> has been advised that
         this instrument and the underlying securities have
         not been registered under the Securities Act, or
@@ -338,7 +338,7 @@
         resold unless they are registered under the Securities Act
         and applicable state securities laws or unless
         an exemption from such registration requirements is available.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         The <a href="#investor">Investor</a> is purchasing this instrument and the securities
         to be acquired by the <a href="#investor">Investor</a> hereunder for its own account
         for investment, not as a nominee or agent, and not with
@@ -346,7 +346,7 @@
         thereof, and the <a href="#investor">Investor</a> has no present intention of
         selling, granting any participation in, or otherwise
         distributing the same.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         The <a href="#investor">Investor</a> has such knowledge and
         experience in financial and business matters that the
         <a href="#investor">Investor</a> is capable of evaluating the merits and risks of
@@ -357,12 +357,12 @@
 
       %h1 Miscellaneous
 
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         Any provision of this instrument may be amended, waived
         or modified only upon the written consent of
         the <a href="#company">Company</a> and
         the <a href="#investor">Investor</a>.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         Any notice required or permitted by this instrument
         will be deemed sufficient when delivered personally or
         by overnight courier or sent by email to the relevant address
@@ -371,7 +371,7 @@
         with postage prepaid, addressed to the party to be notified
         at such party's address listed on the signature page,
         as subsequently modified by written notice.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         The <a href="#investor">Investor</a> is not entitled, as a holder of this
         instrument, to vote or receive dividends or be deemed
         the holder of <a href="#capital-stock">Capital Stock</a> for any purpose, nor will
@@ -383,7 +383,7 @@
         to any corporate action or to receive notice of meetings,
         or to receive subscription rights or otherwise until shares
         have been issued upon the terms described herein.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         Neither this instrument nor the rights contained herein
         may be assigned, by operation of law or otherwise, by
         either party without the prior written consent of the other;
@@ -401,7 +401,7 @@
         may assign this instrument in whole, without the consent of
         the <a href="#investor">Investor</a>, in connection with a reincorporation to change
         the <a href="#company">Company</a>'s domicile.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         In the event any one or more of the provisions of
         this instrument is for any reason held to be invalid,
         illegal or unenforceable, in whole or in part or in any respect,
@@ -413,24 +413,24 @@
         the remaining provisions of this instrument will remain
         operative and in full force and effect and will not
         be affected, prejudiced, or disturbed thereby.
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         All rights and obligations hereunder will be governed
         by the laws of the State of California,
         without regard to the conflicts of law provisions
         of such jurisdiction.
 
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         IN WITNESS WHEREOF, the undersigned have caused this
         instrument to be duly executed and delivered.
 
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         Company:<br/>
         by <span class="data">name, title</span><br/>
         <span class="data">company name</span><br/>
         <span class="data">address</span><br/>
         <span class="data">email</span>
 
-      %p{ :class => 'sect' }
+      %p{ :class=>'sect' }
         Investor:<br/>
         by Yegor Bugayenko, CEO<br/>
         SeedRamp LLC.<br/>
