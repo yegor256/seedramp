@@ -1,0 +1,102 @@
+%html
+  %head
+    %title History
+    %link{:type=>'text/css', :href=>'css/safe.css', :rel=>'stylesheet'}
+    = Haml::Engine.new(File.read('pages/_head.haml')).render
+    = Haml::Engine.new(File.read('pages/_ga.haml')).render
+  %body
+    %article
+      = Haml::Engine.new(File.read('pages/_logo.haml')).render
+      %p
+        History of our interviews:
+
+      %table
+        %thead
+          %tr
+            %th date
+            %th name
+            %th startup
+            %th asked for
+            %th invested
+        %tbody
+
+          %tr
+            %td 31 Jan 2016
+            %td Stepan Gershuni
+            %td Blocknotary
+            %td $20,000
+            %td
+              %a{:href=>"https://www.youtube.com/watch?v=TkRj6Iadk_w"}
+                %span{:style=>"color:red"} none
+
+          %tr
+            %td 31 Jan 2016
+            %td Paul Clarks
+            %td After Agency
+            %td $11,235
+            %td
+              %a{:href=>"https://www.youtube.com/watch?v=lhzRDNSic0A"}
+                %span{:style=>"color:red"} none
+
+          %tr
+            %td 30 Jan 2016
+            %td Trent Lapinski
+            %td MysticLabs
+            %td nothing
+            %td
+              %a{:href=>"https://www.youtube.com/watch?v=20stkcHz4cg"}
+                %span{:style=>"color:red"} none
+
+          %tr
+            %td 30 Jan 2016
+            %td Amanda Frazier
+            %td NotPie
+            %td $15,000
+            %td
+              %a{:href=>"https://www.youtube.com/watch?v=ouYq6Ci3Ugk"}
+                %span{:style=>"color:red"} none
+
+          %tr
+            %td 29 Jan 2016
+            %td Gary Feldman
+            %td InTek
+            %td $20,000
+            %td
+              %a{:href=>"https://www.youtube.com/watch?v=LYKGu37J8dg"}
+                %span{:style=>"color:red"} none
+
+          %tr
+            %td 23 Jan 2016
+            %td Dan Seider
+            %td Stigma App
+            %td nothing
+            %td
+              %a{:href=>"https://www.youtube.com/watch?v=EQ4IpbEGSZo"}
+                %span{:style=>"color:red"} none
+
+          %tr
+            %td 19 Jan 2016
+            %td Gabe Batstone
+            %td Contextere
+            %td $20,000
+            %td
+              %a{:href=>"https://www.youtube.com/watch?v=XdXLyhA8SyM"}
+                %span{:style=>"color:red"} none
+
+          %tr
+            %td 16 Jan 2016
+            %td Dave Rowell
+            %td LifeLinker
+            %td $20,000
+            %td
+              %a{:href=>"https://www.youtube.com/watch?v=TbjTdJdR5AQ"}
+                %span{:style=>"color:red"} none
+
+          %tr
+            %td 16 Jan 2016
+            %td Roman Aleksandrenko
+            %td Habitloop
+            %td $12,000
+            %td
+              %a{:href=>"https://www.youtube.com/watch?v=rXUz5--si1s"}
+                %span{:style=>"color:red"} none

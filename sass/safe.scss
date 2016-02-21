@@ -62,3 +62,24 @@ p {
     min-width: 10 * $em;
   }
 }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+
+  thead th {
+    border-bottom: .1 * $em solid $blue;
+  }
+
+  th {
+    font-weight: bold;
+    text-align: left;
+
+  }
+
+  td,
+  th {
+    padding: .3 * $em .5 * $em .3 * $em 0;
+  }
+}

@@ -23,7 +23,6 @@ hr {
 
 .video {
   @extend %container;
-  position: relative;
   text-align: center;
   width: 48 * $em;
 
@@ -38,7 +37,6 @@ hr {
     margin: 0 auto;
     max-width: 100%;
     padding: $em;
-    position: relative;
     width: .3 * 48 * $em;
 
     iframe {
