@@ -39,10 +39,29 @@ hr {
     padding: $em;
     width: .3 * 48 * $em;
 
+    .film {
+      height: 0;
+      padding-bottom: 56.5%;
+      width: 100%;
+    }
+
     iframe {
       border: 0;
+      height: 100%;
+      left: 0;
       padding: 0;
+      position: absolute;
       width: 100%;
+    }
+
+    .bad {
+      background-color: $red;
+      bottom: .5 * $em;
+      color: $white;
+      font-size: .7 * $em;
+      position: absolute;
+      right: .5 * $em;
+      text-decoration: line-through;
     }
   }
 }
