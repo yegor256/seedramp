@@ -13,7 +13,8 @@
       %p
         We give you cash to cover the next calendar month
         (up to <strong>$20k</strong>), you give us
-        <a href="safe.html">SAFE</a>.
+        = succeed "." do
+          %a{:href=>"safe.html"} SAFE
       %p
         We make investment decisions in <strong>24 hours</strong>,
         after a one-hour interview (<a href="faq.html">FAQ</a>).
@@ -54,13 +55,18 @@
     %article
       %p
         Read
-        <a href="http://www.yegor256.com/2015/12/16/investors-are-too-scared.html">this</a>.
+        = succeed "." do
+          %a{:href=>"http://www.yegor256.com/2015/12/16/investors-are-too-scared.html"} this
       %p
         For updates, follow us on
-        <a href="https://www.youtube.com/channel/UCcB3-zxKmcsUbBbwvWduZ5A">YouTube</a>,
-        <a href="https://twitter.com/seedramp">Twitter</a>,
-        <a href="https://www.facebook.com/pages/SeedRamp/673517622779888">Facebook</a>
+        = succeed "," do
+          %a{:href=>"https://www.youtube.com/channel/UCcB3-zxKmcsUbBbwvWduZ5A"} YouTube
+        = succeed "," do
+          %a{:href=>"https://twitter.com/seedramp"} Twitter
+        %a{:href=>"https://www.facebook.com/pages/SeedRamp/673517622779888"} Facebook
         and
-        <a href="https://www.linkedin.com/company/seedramp">LinkedIn</a>.
+        = succeed "." do
+          %a{:href=>"https://www.linkedin.com/company/seedramp"} LinkedIn
         If any questions,
-        <a href="mailto:team@seedramp.com">email</a>.
+        = succeed "." do
+          %a{:href=>"mailto:team@seedramp.com"} email
