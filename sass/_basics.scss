@@ -7,7 +7,7 @@
   max-width: 100%;
   padding: 2 * $em;
   @media all and (max-width: $width) {
-    padding: $em;
+    padding: .5 * $em;
   }
 }
 
