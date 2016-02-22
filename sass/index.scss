@@ -54,14 +54,22 @@ hr {
       width: 100%;
     }
 
-    .bad {
-      background-color: $red;
+    .bad,
+    .good {
       bottom: .5 * $em;
       color: $white;
       font-size: .7 * $em;
       position: absolute;
       right: .5 * $em;
       text-decoration: line-through;
+    }
+
+    .good {
+      background-color: $green;
+    }
+
+    .bad {
+      background-color: $red;
     }
   }
 }
