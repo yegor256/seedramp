@@ -61,7 +61,6 @@ hr {
       font-size: .7 * $em;
       position: absolute;
       right: .5 * $em;
-      text-decoration: line-through;
     }
 
     .good {
@@ -70,6 +69,7 @@ hr {
 
     .bad {
       background-color: $red;
+      text-decoration: line-through;
     }
   }
 }
