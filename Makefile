@@ -30,7 +30,7 @@ target/css/%.css: sass/%.scss target
 	mkdir -p target/css
 	sass --style=compressed --sourcemap=none $< $@
 
-target/log/%.html: log/%.md target $(DEPS)
+target/log/%.html: log/%.md target $(DEPS) make-log.rb
 	mkdir -p `dirname $@`
 	./make-log.rb $< > $@
 

@@ -59,8 +59,9 @@ some traction, he may come back to us again and we'll give another portion
 of cash, to cover the next calendar month.
 
 On Monday, Dan emailed me the contract, we signed it electronically and I've
-sent him a wire transfer for $5,000. We're partners from now on.
+sent him a wire transfer for $5,000. We're partners!
 
 Yegor Bugayenko<br/>
-CEO, SeedRamp LLC
+CEO, SeedRamp LLC<br/>
+20 Feb 2016
 
