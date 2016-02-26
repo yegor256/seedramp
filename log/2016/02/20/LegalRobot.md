@@ -1,5 +1,6 @@
 title: First $5,000 for LegalRobot
 abstract: We made our first investment decision and we think it was a good one
+author: Yegor Bugayenko
 --
 
 **Intro**.
@@ -62,8 +63,4 @@ of cash, to cover the next calendar month.
 
 On Monday, Dan emailed me the contract, we signed it electronically and I've
 sent him a wire transfer for $5,000. We're partners!
-
-Yegor Bugayenko<br/>
-SeedRamp LLC, CEO<br/>
-20 Feb 2016
 

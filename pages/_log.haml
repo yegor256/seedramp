@@ -3,12 +3,20 @@
     %title= yaml['title']
     %link{:type=>'text/css', :href=>'/css/plain.css', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>yaml['abstract']}
+    %meta{:name=>'author', :content=>yaml['author']}
+    %meta{:name=>'published', :content=>day}
     = Haml::Engine.new(File.read('pages/_head.haml')).render
     = Haml::Engine.new(File.read('pages/_ga.haml')).render
   %body
     %article
       = Haml::Engine.new(File.read('pages/_logo.haml')).render
       %h1= yaml['title']
-      = content
-
+      %div#content
+        = content
+        %p
+          = yaml['author']
+          %br
+          SeedRamp LLC
+          %br
+          = day
 

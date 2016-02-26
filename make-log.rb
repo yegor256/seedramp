@@ -16,4 +16,5 @@ puts Haml::Engine.new(File.read('./pages/_log.haml')).render(
     Liquid::Template.parse(body).render()
   ),
   :yaml => yaml,
+  :day => File.dirname(ARGV[0]).gsub(/^log\//, '').gsub(/\//, '-')
 )

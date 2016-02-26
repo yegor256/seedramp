@@ -21,6 +21,9 @@ target/CNAME: target
 target/sitemap.xml: make-sitemap.rb $(HTML)
 	./make-sitemap.rb > target/sitemap.xml
 
+target/rss.xml: make-rss.rb $(HTML)
+	./make-rss.rb > target/rss.xml
+
 target/robots.txt: target
 	echo "" > target/robots.txt
 
@@ -39,7 +42,7 @@ target/log/%.html: log/%.md target $(DEPS) make-log.rb
 	mkdir -p `dirname $@`
 	./make-log.rb $< > $@
 
-site: $(HTML) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt target/sitemap.xml
+site: $(HTML) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt target/sitemap.xml target/rss.xml
 
 lint: target/css/scsslint
 
