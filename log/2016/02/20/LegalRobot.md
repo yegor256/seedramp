@@ -64,6 +64,6 @@ On Monday, Dan emailed me the contract, we signed it electronically and I've
 sent him a wire transfer for $5,000. We're partners!
 
 Yegor Bugayenko<br/>
-CEO, SeedRamp LLC<br/>
+SeedRamp LLC, CEO<br/>
 20 Feb 2016
 
