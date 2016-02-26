@@ -2,6 +2,7 @@
   %head
     %title SeedRamp
     %link{:type=>'text/css', :href=>'css/index.css', :rel=>'stylesheet'}
+    %meta{:name=>'description', :content=>'We make seed investments in hi-tech startups after one-hour interview'}
     = Haml::Engine.new(File.read('pages/_head.haml')).render
     = Haml::Engine.new(File.read('pages/_ga.haml')).render
   %body
@@ -16,7 +17,9 @@
         = succeed "." do
           %a{:href=>"safe.html"} SAFE
       %p
-        We make investment decisions in <strong>24 hours</strong>,
+        We make investment decisions in
+        = succeed "," do
+          %strong 24 hours
         after a one-hour interview (<a href="faq.html">FAQ</a>).
       %p{:style=>'text-align:center' }
         %a{:href=>'https://calendly.com/yegor256/seedramp', :title=>'Schedule it right now', :style=>'text-decoration:none'}
@@ -26,7 +29,8 @@
         %span{ :style=>'font-size:0.6em;color:gray;' }
           By clicking this button you automatically
           accept terms and conditions of this
-          %a{:href=>"consent.html"} Release Consent for Video Interview
+          = succeed "." do
+            %a{:href=>"consent.html"} Release Consent for Video Interview
 
     %div.video
       %div.col
@@ -44,10 +48,6 @@
       %div.col
         %div.film
           %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/EQ4IpbEGSZo?controls=2', :allowfullscreen=>'' }
-      / %div.col
-      /   %div.film
-      /     %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/LYKGu37J8dg?controls=2', :allowfullscreen=>'' }
-      /   %span.bad $20,000
       %div.col
         %div.film
           %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/ouYq6Ci3Ugk?controls=2', :allowfullscreen=>'' }
@@ -68,13 +68,11 @@
           %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/AetgrIGCrSU?controls=2', :allowfullscreen=>'' }
         %span.good $5,000
 
-      %p{:style=>"clear:both"}
-        More coming soon...
-      %p
-        %a{:href=>"history.html"}
-          Full history of all interviews
-
     %article
+      %p{:style=>"clear:both"}
+        See full log of all
+        = succeed "." do
+          %a{:href=>"history.html"} 10 interviews
       %p
         Read
         = succeed "." do
