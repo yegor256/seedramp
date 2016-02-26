@@ -1,7 +1,7 @@
 %html
   %head
     %title SeedRamp
-    %link{:type=>'text/css', :href=>'css/index.css', :rel=>'stylesheet'}
+    %link{:type=>'text/css', :href=>'/css/index.css', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'We make seed investments in hi-tech startups after one-hour interview'}
     = Haml::Engine.new(File.read('pages/_head.haml')).render
     = Haml::Engine.new(File.read('pages/_ga.haml')).render
@@ -15,7 +15,7 @@
         We give you cash to cover the next calendar month
         (up to <strong>$20k</strong>), you give us
         = succeed "." do
-          %a{:href=>"safe.html"} SAFE
+          %a{:href=>"/safe.html"} SAFE
       %p
         We make investment decisions in
         = succeed "," do
@@ -30,7 +30,7 @@
           By clicking this button you automatically
           accept terms and conditions of this
           = succeed "." do
-            %a{:href=>"consent.html"} Release Consent for Video Interview
+            %a{:href=>"/consent.html"} Release Consent for Video Interview
 
     %div.video
       %div.col
@@ -72,7 +72,7 @@
       %p{:style=>"clear:both"}
         See full log of all
         = succeed "." do
-          %a{:href=>"history.html"} 10 interviews
+          %a{:href=>"/history.html"} 10 interviews
       %p
         Read
         = succeed "." do
