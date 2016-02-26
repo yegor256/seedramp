@@ -10,8 +10,8 @@ all: target lint site
 target:
 	mkdir -p target
 
-scsslint:
-	scss-lint -c .scss-lint.yml 
+target/css/scsslint: $(CSS)
+	scss-lint -c .scss-lint.yml > target/css/scsslint
 
 target/CNAME: target
 	echo "$(URL)" > target/CNAME
@@ -36,7 +36,7 @@ target/log/%.html: log/%.md target $(DEPS) make-log.rb
 
 site: $(HTML) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt
 
-lint: scsslint
+lint: target/css/scsslint
 
 clean:
 	rm -rf target
