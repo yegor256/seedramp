@@ -1,6 +1,7 @@
 URL = www.seedramp.com
 HTML = $(patsubst pages/%.haml, target/%.html, $(wildcard pages/[^_]*.haml))
 DEPS = $(wildcard pages/[_]*.haml)
+CSS_DEPS = $(wildcard sass/[_]*.scss)
 LOG = target/log/2016/02/20/LegalRobot.html
 CSS = $(patsubst sass/%.scss, target/css/%.css, $(wildcard sass/[^_]*.scss))
 IMAGES = $(patsubst images/%, target/images/%, $(wildcard images/*))
@@ -11,7 +12,8 @@ target:
 	mkdir -p target
 
 target/css/scsslint: $(CSS)
-	scss-lint -c .scss-lint.yml > target/css/scsslint
+	scss-lint -c .scss-lint.yml
+	touch target/css/scsslint
 
 target/CNAME: target
 	echo "$(URL)" > target/CNAME
@@ -26,7 +28,7 @@ target/images/%: images/% target
 target/%.html: pages/%.haml target $(DEPS)
 	haml --style=indented $< > $@
 
-target/css/%.css: sass/%.scss target
+target/css/%.css: sass/%.scss target $(CSS_DEPS)
 	mkdir -p target/css
 	sass --style=compressed --sourcemap=none $< $@
 

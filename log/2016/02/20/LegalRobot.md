@@ -1,11 +1,6 @@
-title: Why $5,000 and why LegalRobot?
+title: First $5,000 for LegalRobot
 abstract: We made our first investment decision and we think it was a good one
 --
-
-<div style='float:right'>
-  <iframe class='video' src='https://www.youtube.com/embed/rXUz5--si1s?controls=2'
-    allowfullscreen=''></iframe>
-</div>
 
 **Intro**.
 This was our 10th interview and I was very skeptical. To be honest,
@@ -14,6 +9,13 @@ appointment. It was Saturday morning, 10am. I told Dan that previous
 interviews were not successful and he had to be ready for a negative answer.
 He said, no problem, at least a feedback would be helpful. With that far-from-optimistic
 mood we started.
+
+<div style='width:50%;float:right'>
+  <div class='film'>
+    <iframe class='video' src='https://www.youtube.com/embed/rXUz5--si1s?controls=2'
+      allowfullscreen=''></iframe>
+  </div>
+</div>
 
 **Product**.
 LegalRobot is a hosted software solution for parsing legal documents
