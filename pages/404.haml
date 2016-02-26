@@ -9,4 +9,8 @@
     %article
       = Haml::Engine.new(File.read('pages/_logo.haml')).render
       %p
-        Page not found, we're sorry. Try our <a href="/">index</a> page.
+        Page not found, we're sorry.
+        Try our
+        %a{:href=>'/'} index
+        page.
+
