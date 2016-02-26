@@ -18,6 +18,9 @@ target/css/scsslint: $(CSS)
 target/CNAME: target
 	echo "$(URL)" > target/CNAME
 
+target/sitemap.xml: make-sitemap.rb $(HTML)
+	./make-sitemap.rb > target/sitemap.xml
+
 target/robots.txt: target
 	echo "" > target/robots.txt
 
@@ -36,7 +39,7 @@ target/log/%.html: log/%.md target $(DEPS) make-log.rb
 	mkdir -p `dirname $@`
 	./make-log.rb $< > $@
 
-site: $(HTML) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt
+site: $(HTML) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt target/sitemap.xml
 
 lint: target/css/scsslint
 
