@@ -1,5 +1,6 @@
 URL = www.seedramp.com
 HTML = $(patsubst pages/%.haml, target/%.html, $(wildcard pages/[^_]*.haml))
+LOG = target/log/2016/02/20/LegalRobot.html
 CSS = $(patsubst sass/%.scss, target/css/%.css, $(wildcard sass/[^_]*.scss))
 IMAGES = $(patsubst images/%, target/images/%, $(wildcard images/*))
 
@@ -21,14 +22,18 @@ target/images/%: images/% target
 	mkdir -p target/images
 	cp $< $@
 
-target/%.html : pages/%.haml target
+target/%.html: pages/%.haml target
 	haml --style=indented $< > $@
 
 target/css/%.css: sass/%.scss target
 	mkdir -p target/css
 	sass --style=compressed --sourcemap=none $< $@
 
-site: $(HTML) $(CSS) $(IMAGES) target/CNAME target/robots.txt
+target/log/%.html: log/%.md target
+	mkdir -p `dirname $@`
+	./make-log.rb $< > $@
+
+site: $(HTML) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt
 
 lint: scsslint
 

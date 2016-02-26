@@ -1,0 +1,13 @@
+%html
+  %head
+    %title= yaml['title']
+    %link{:type=>'text/css', :href=>'css/safe.css', :rel=>'stylesheet'}
+    %meta{:name=>'description', :content=>yaml['abstract']}
+    = Haml::Engine.new(File.read('pages/_head.haml')).render
+    = Haml::Engine.new(File.read('pages/_ga.haml')).render
+  %body
+    %article
+      = Haml::Engine.new(File.read('pages/_logo.haml')).render
+      = content
+
+
