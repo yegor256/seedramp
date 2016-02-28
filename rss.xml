@@ -5,8 +5,8 @@
     <name>SeedRamp</name>
   </author>
   <id>seedramp.com</id>
-  <title>Venture Fund</title>
-  <updated>2016-02-28T11:04:57.812197+00:00</updated>
+  <title>SeedRamp</title>
+  <updated>2016-02-28T11:52:35.993185+00:00</updated>
   <entry>
     <author>
       <name>Yegor Bugayenko</name>
@@ -88,5 +88,5 @@
     <updated>2016-02-20T00:00:00+00:00</updated>
     <dc:date>2016-02-20T00:00:00+00:00</dc:date>
   </entry>
-  <dc:date>2016-02-28T11:04:57.812197+00:00</dc:date>
+  <dc:date>2016-02-28T11:52:35.993185+00:00</dc:date>
 </feed>
