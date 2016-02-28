@@ -6,7 +6,7 @@ require 'nokogiri'
 
 rss = RSS::Maker.make('atom') do |atom|
   atom.channel.author = 'SeedRamp'
-  atom.channel.title = 'Venture Fund'
+  atom.channel.title = 'SeedRamp'
   atom.channel.id = 'seedramp.com'
   atom.channel.updated = Time.now
   Dir['target/log/**/*.html'].sort.reverse.each do |file|
