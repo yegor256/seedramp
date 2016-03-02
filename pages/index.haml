@@ -2,7 +2,7 @@
   %head
     %title SeedRamp
     %link{:type=>'text/css', :href=>'/css/index.css', :rel=>'stylesheet'}
-    %meta{:name=>'description', :content=>'We make seed investments in hi-tech startups after one-hour interview'}
+    %meta{:name=>'description', :content=>'We make seed investments in high-tech startups after one-hour interviews'}
     = Haml::Engine.new(File.read('pages/_head.haml')).render
     = Haml::Engine.new(File.read('pages/_ga.haml')).render
   %body
@@ -22,13 +22,13 @@
           %strong 24 hours
         after a one-hour interview (<a href="faq.html">FAQ</a>).
       %p{:style=>'text-align:center' }
-        %a{:href=>'https://calendly.com/yegor256/seedramp', :title=>'Schedule it right now', :style=>'text-decoration:none'}
+        %a{:href=>'https://calendly.com/yegor256/seedramp', :title=>'Schedule an interview now', :style=>'text-decoration:none'}
           %button Schedule
         %br
         %br
         %span{ :style=>'font-size:0.6em;color:gray;' }
-          By clicking this button you automatically
-          accept terms and conditions of this
+          By clicking this button, you automatically
+          accept the terms and conditions of the
           = succeed "." do
             %a{:href=>"/consent.html"} Release Consent for Video Interview
 
@@ -87,6 +87,6 @@
         and
         = succeed "." do
           %a{:href=>"https://www.linkedin.com/company/seedramp"} LinkedIn
-        If any questions,
+        With questions, contact us at
         = succeed "." do
           %a{:href=>"mailto:team@seedramp.com"} email
