@@ -20,7 +20,7 @@
   <body>
     <article>
       <div class='par'>
-        <a href='/'>
+        <a href='/index.html'>
           <img alt='logo' class='noprint' src='/images/logo.svg' style='width:100px;height:100px;'>
         </a>
       </div>

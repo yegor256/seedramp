@@ -20,7 +20,7 @@
   <body>
     <article>
       <div class='par'>
-        <a href='/'>
+        <a href='/index.html'>
           <img alt='logo' class='noprint' src='/images/logo.svg' style='width:100px;height:100px;'>
         </a>
       </div>
@@ -33,8 +33,7 @@
         We video record the entire session and
         publish it <a href="https://www.youtube.com/channel/UCcB3-zxKmcsUbBbwvWduZ5A">online</a>.
         You will have to sign this
-        <a href='/consent'>consent form</a>
-        before we start talking.
+        <a href="consent.html">consent form</a> before we start talking.
       </p>
       <p>
         We don't care what you do with the money.
@@ -62,8 +61,7 @@
         At the moment, we're only doing interviews
         in Palo Alto. You have to be physically present.
         We're planning to start online interviews in April 2016.
-        You can
-        <a href='https://calendly.com/yegor256/seedramp-online'>schedule one</a>
+        You can <a href="https://calendly.com/yegor256/seedramp-online">schedule one</a>
         right now.
       </p>
       <h1>What is the interview format?</h1>
