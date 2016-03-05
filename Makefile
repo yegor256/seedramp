@@ -33,6 +33,7 @@ target/images/%: images/% target
 
 target/%.html: pages/%.haml target $(DEPS)
 	haml --style=indented $< > $@
+	cp $@ $(subst .html, , $@)
 
 target/css/%.css: sass/%.scss target $(CSS_DEPS)
 	mkdir -p target/css
