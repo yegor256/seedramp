@@ -11,7 +11,7 @@ interviews were not successful and he had to be ready for a negative answer.
 He said no problem, at least some feedback would be helpful. With that far from optimistic
 mood, we started.
 
-<div style='width:50%;float:right'>
+<div style='width:50%;float:right;z-index:100'>
   <div class='film'>
     <iframe class='video' src='https://www.youtube.com/embed/AetgrIGCrSU?controls=2'
       allowfullscreen=''></iframe>
