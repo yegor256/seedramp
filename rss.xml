@@ -6,7 +6,7 @@
   </author>
   <id>seedramp.com</id>
   <title>SeedRamp</title>
-  <updated>2016-03-09T16:49:04.489155+00:00</updated>
+  <updated>2016-03-09T23:12:51.46819+00:00</updated>
   <entry>
     <author>
       <name>Yegor Bugayenko</name>
@@ -30,7 +30,7 @@
         &lt;/div&gt;
         
         &lt;p&gt;&lt;strong&gt;Product&lt;/strong&gt;.
-        LegalRobot is a hosted software solution for parsing legal documents
+        &lt;a href=&quot;http://www.legalrobot.com&quot;&gt;LegalRobot&lt;/a&gt; is a hosted software solution for parsing legal documents
         and finding abnormalities within them. That's how I understood it, at least. You can
         upload a PDF contract and in a few seconds get a summary of what
         looks suspicious. For example, clause 8.3 is too much against the buyer.
@@ -49,13 +49,15 @@
         &lt;p&gt;&lt;strong&gt;Competition&lt;/strong&gt;.
         There are a few companies that are technically doing the exact same thing. However,
         according to Dan, they are all focused on lawyers. Their target users
-        are attorneys, while LegalRobot is for those who want to do those verifications
+        are attorneys, while &lt;a href=&quot;http://www.legalrobot.com&quot;&gt;LegalRobot&lt;/a&gt;
+        is for those who want to do those verifications
         without paying legal fees. I truly believe that taking lawyers out of the
         market as much as possible, and replacing them with computer systems, is
         definitely the right strategy.&lt;/p&gt;
         
         &lt;p&gt;&lt;strong&gt;Team&lt;/strong&gt;.
-        Dan is a CEO, an architect and a programmer. I was glad to see that.
+        &lt;a href=&quot;https://www.linkedin.com/in/danrubins&quot;&gt;Dan&lt;/a&gt;
+        is a CEO, an architect and a programmer. I was glad to see that.
         In general, I believe in startups managed and founded by technical people,
         who are real authors of their products. There are a few freelancers helping
         him. That's exactly the type of startup team I'm comfortable investing in.&lt;/p&gt;
@@ -88,5 +90,5 @@
     <updated>2016-02-20T00:00:00+00:00</updated>
     <dc:date>2016-02-20T00:00:00+00:00</dc:date>
   </entry>
-  <dc:date>2016-03-09T16:49:04.489155+00:00</dc:date>
+  <dc:date>2016-03-09T23:12:51.46819+00:00</dc:date>
 </feed>
