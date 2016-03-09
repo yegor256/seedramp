@@ -2,6 +2,7 @@
   %head
     %title SeedRamp
     %link{:type=>'text/css', :href=>'/css/index.css', :rel=>'stylesheet'}
+    %link{:type=>'text/css', :href=>'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'We make seed investments in high-tech startups after one-hour interviews'}
     = Haml::Engine.new(File.read('pages/_head.haml')).render
     = Haml::Engine.new(File.read('pages/_ga.haml')).render
@@ -83,18 +84,19 @@
         = succeed "!" do
           %a{:href=>"/hiring.html"} wanted
       %p
-        For updates, follow us on
-        = succeed "," do
-          %a{:href=>"https://www.youtube.com/channel/UCcB3-zxKmcsUbBbwvWduZ5A"} YouTube
-        = succeed "," do
-          %a{:href=>"https://twitter.com/seedramp"} Twitter
-        = succeed "," do
-          %a{:href=>"https://www.facebook.com/seedramp/"} Facebook
-        = succeed "," do
-          %a{:href=>"https://www.crunchbase.com/organization/seedramp"} CrunchBase
-        and
+        %a.ico{:href=>"https://www.facebook.com/seedramp/"}
+          %i.fa.fa-facebook
+        %a.ico{:href=>"https://twitter.com/seedramp"}
+          %i.fa.fa-twitter
+        %a.ico{:href=>"https://www.youtube.com/channel/UCcB3-zxKmcsUbBbwvWduZ5A"}
+          %i.fa.fa-youtube
+        %a.ico{:href=>"https://www.linkedin.com/company/seedramp"}
+          %i.fa.fa-linkedin
+      %p{:style=>'font-size:0.6em;color:gray;'}
+        We are also trying to keep our profiles
+        up to date at
         = succeed "." do
-          %a{:href=>"https://www.linkedin.com/company/seedramp"} LinkedIn
-        With questions, contact us by
+          %a{:href=>"https://www.crunchbase.com/organization/seedramp"} CrunchBase
+        If any questions, don't hesitate to
         = succeed "." do
           %a{:href=>"mailto:team@seedramp.com"} email
