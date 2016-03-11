@@ -8,11 +8,6 @@ body {
   font-size: .7 * $em;
 }
 
-.par {
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
-
 article {
   width: 32 * $em;
   @media print {
