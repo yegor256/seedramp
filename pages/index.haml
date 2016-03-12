@@ -1,7 +1,7 @@
 %html
   %head
     %title SeedRamp
-    %link{:type=>'text/css', :href=>'/css/index.css', :rel=>'stylesheet'}
+    %link{:type=>'text/css', :href=>'/css/index.css?REVISION', :rel=>'stylesheet'}
     %link{:type=>'text/css', :href=>'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'We make seed investments in high-tech startups after one-hour interviews'}
     = Haml::Engine.new(File.read('pages/_head.haml')).render

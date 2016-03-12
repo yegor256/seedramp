@@ -5,6 +5,7 @@ CSS_DEPS = $(wildcard sass/[_]*.scss)
 LOG = target/log/2016/02/20/LegalRobot.html
 CSS = $(patsubst sass/%.scss, target/css/%.css, $(wildcard sass/[^_]*.scss))
 IMAGES = $(patsubst images/%, target/images/%, $(wildcard images/*))
+REVISION = $(shell git rev-parse --short HEAD)
 
 all: target lint site
 
@@ -33,6 +34,7 @@ target/images/%: images/% target
 
 target/%.html: pages/%.haml target $(DEPS)
 	haml --style=indented $< > $@
+	sed -i 's|REVISION|$(REVISION)|g' $@
 
 target/css/%.css: sass/%.scss target $(CSS_DEPS)
 	mkdir -p target/css
