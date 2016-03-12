@@ -48,3 +48,8 @@ article {
     width: 100px;
   }
 }
+
+.hint {
+  color: lighten($black, 50);
+  font-size: .6 * $em;
+}

@@ -40,11 +40,12 @@
         %br
         %input{:name=>"when", :type=>"radio", :value=>"later"} In a few months
 
-        %label
+        %label &nbsp;
+        %button{:type=>"submit"} Schedule
+        %label.hint
           By clicking this button, you automatically
           accept the terms and conditions of the
           = succeed "." do
             %a{:href=>"/consent.html"} Release Consent for Video Interview
-        %button{:type=>"submit"} Schedule
       %p
         Thanks.
