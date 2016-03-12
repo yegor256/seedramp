@@ -43,6 +43,7 @@ target/css/%.css: sass/%.scss target $(CSS_DEPS)
 target/log/%.html: log/%.md target $(DEPS) make-log.rb
 	mkdir -p `dirname $@`
 	./make-log.rb $< > $@
+	sed -i 's|REVISION|$(REVISION)|g' $@
 
 site: $(HTML) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt target/sitemap.xml target/rss.xml
 
