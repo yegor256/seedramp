@@ -1,0 +1,50 @@
+%html
+  %head
+    %title Schedule an interview
+    %link{:type=>'text/css', :href=>'/css/plain.css', :rel=>'stylesheet'}
+    %meta{:name=>'description', :content=>'Schedule an interview with us right away, no introductions required'}
+    = Haml::Engine.new(File.read('pages/_head.haml')).render
+    = Haml::Engine.new(File.read('pages/_ga.haml')).render
+  %body
+    %article
+      = Haml::Engine.new(File.read('pages/_logo.haml')).render
+      %h1 Schedule an interview
+      %p
+        Submit this form and we'll email you back,
+        to schedule an interview. We reply to all requests.
+      %form{:method=>"POST", :action=>"//formspree.io/apply@seedramp.com"}
+        %input{:name=>"_next", :type=>"hidden", :value=>"http://www.seedramp.com/thanks.html"}
+        %input{:name=>"_format", :type=>"hidden", :value=>"text"}
+
+        %label Your LinkedIn profile link:
+        %input{:name=>"linkedin", :size=>"40", :type=>"url", :required=>"required"}
+
+        %label Your email:
+        %input{:name=>"email", :size=>"25", :type=>"email", :required=>"required"}
+
+        %label Name of startup:
+        %input{:name=>"_subject", :size=>"19", :type=>"text", :required=>"required"}
+
+        %label How much do you need (USD):
+        %input{:name=>"amount", :size=>"8", :type=>"number", :required=>"required"}
+
+        %label Where:
+        %input{:name=>"where", :type=>"radio", :value=>"in-person", :checked=>"checked"} Palo Alto, CA (your chances are higher)
+        %br
+        %input{:name=>"where", :type=>"radio", :value=>"online"} Online, over Skype
+
+        %label When:
+        %input{:name=>"when", :type=>"radio", :value=>"ASAP"} ASAP
+        %br
+        %input{:name=>"when", :type=>"radio", :value=>"month", :checked=>"checked"} In a few weeks
+        %br
+        %input{:name=>"when", :type=>"radio", :value=>"later"} In a few months
+
+        %label
+          By clicking this button, you automatically
+          accept the terms and conditions of the
+          = succeed "." do
+            %a{:href=>"/consent.html"} Release Consent for Video Interview
+        %button{:type=>"submit"} Schedule
+      %p
+        Thanks.

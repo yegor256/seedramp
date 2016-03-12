@@ -1,6 +1,7 @@
 @import 'colors';
 @import 'basics';
 @import 'youtube';
+@import 'forms';
 
 article {
   text-align: center;
@@ -62,16 +63,6 @@ hr {
       text-decoration: line-through;
     }
   }
-}
-
-button {
-  background-color: $blue;
-  border: 0;
-  border-radius: .2 * $em;
-  color: $white;
-  cursor: pointer;
-  font-size: $em;
-  padding: .5 * $em;
 }
 
 .ico {
