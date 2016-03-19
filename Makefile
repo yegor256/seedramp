@@ -8,6 +8,8 @@ IMAGES = $(patsubst images/%, target/images/%, $(wildcard images/*))
 REVISION = $(shell git rev-parse --short HEAD)
 
 inject = sed -i 's|REVISION|$(REVISION)|g' $(1)
+minify = html-minifier --lint --remove-redundant-attributes --remove-script-type-attributes \
+  --remove-empty-elements --collapse-whitespace --remove-comments --output $(1) $(1)
 
 all: target lint site
 
@@ -37,6 +39,7 @@ target/images/%: images/% target
 target/%.html: pages/%.haml target $(DEPS)
 	haml --style=indented $< > $@
 	$(call inject,$@)
+	$(call minify,$@)
 
 target/css/%.css: sass/%.scss target $(CSS_DEPS)
 	mkdir -p target/css
@@ -46,6 +49,7 @@ target/log/%.html: log/%.md target $(DEPS) make-log.rb
 	mkdir -p `dirname $@`
 	./make-log.rb $< > $@
 	$(call inject,$@)
+	$(call minify,$@)
 
 site: $(HTML) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt target/sitemap.xml target/rss.xml
 
