@@ -7,6 +7,8 @@ CSS = $(patsubst sass/%.scss, target/css/%.css, $(wildcard sass/[^_]*.scss))
 IMAGES = $(patsubst images/%, target/images/%, $(wildcard images/*))
 REVISION = $(shell git rev-parse --short HEAD)
 
+inject = sed -i 's|REVISION|$(REVISION)|g' $(1)
+
 all: target lint site
 
 target:
@@ -34,7 +36,7 @@ target/images/%: images/% target
 
 target/%.html: pages/%.haml target $(DEPS)
 	haml --style=indented $< > $@
-	sed -i 's|REVISION|$(REVISION)|g' $@
+	$(call inject,$@)
 
 target/css/%.css: sass/%.scss target $(CSS_DEPS)
 	mkdir -p target/css
@@ -43,7 +45,7 @@ target/css/%.css: sass/%.scss target $(CSS_DEPS)
 target/log/%.html: log/%.md target $(DEPS) make-log.rb
 	mkdir -p `dirname $@`
 	./make-log.rb $< > $@
-	sed -i 's|REVISION|$(REVISION)|g' $@
+	$(call inject,$@)
 
 site: $(HTML) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt target/sitemap.xml target/rss.xml
 
