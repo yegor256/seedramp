@@ -5,15 +5,7 @@
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://www.seedramp.com/404.amp.html</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
-  </url>
-  <url>
     <loc>http://www.seedramp.com/consent.html</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://www.seedramp.com/consent.amp.html</loc>
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -21,15 +13,7 @@
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://www.seedramp.com/faq.amp.html</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
-  </url>
-  <url>
     <loc>http://www.seedramp.com/hiring.html</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://www.seedramp.com/hiring.amp.html</loc>
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -37,15 +21,7 @@
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://www.seedramp.com/history.amp.html</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
-  </url>
-  <url>
     <loc>http://www.seedramp.com/index.html</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://www.seedramp.com/index.amp.html</loc>
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -53,19 +29,43 @@
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://www.seedramp.com/safe.amp.html</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
-  </url>
-  <url>
     <loc>http://www.seedramp.com/schedule.html</loc>
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://www.seedramp.com/schedule.amp.html</loc>
+    <loc>http://www.seedramp.com/thanks.html</loc>
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://www.seedramp.com/thanks.html</loc>
+    <loc>http://www.seedramp.com/404.amp.html</loc>
+    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.seedramp.com/consent.amp.html</loc>
+    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.seedramp.com/faq.amp.html</loc>
+    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.seedramp.com/hiring.amp.html</loc>
+    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.seedramp.com/history.amp.html</loc>
+    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.seedramp.com/index.amp.html</loc>
+    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.seedramp.com/safe.amp.html</loc>
+    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.seedramp.com/schedule.amp.html</loc>
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -74,10 +74,6 @@
   </url>
   <url>
     <loc>http://www.seedramp.com/log/2016/02/20/LegalRobot.html</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://www.seedramp.com/log/2016/02/20/LegalRobot.amp.html</loc>
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
 </urlset>
