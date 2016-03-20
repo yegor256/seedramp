@@ -3,7 +3,7 @@ HTML = $(patsubst pages/%.haml, target/%.html, $(wildcard pages/[^_]*.haml))
 AMP = $(patsubst %.html, %.amp.html, $(HTML))
 DEPS = $(wildcard pages/[_]*.haml)
 CSS_DEPS = $(wildcard sass/[_]*.scss)
-LOG = target/log/2016/02/20/LegalRobot.html
+LOG = $(patsubst log/%.md, target/log/%.html, $(shell find log -name '*.md'))
 CSS = $(patsubst sass/%.scss, target/css/%.css, $(wildcard sass/[^_]*.scss))
 IMAGES = $(patsubst images/%, target/images/%, $(wildcard images/*))
 REVISION = $(shell git rev-parse --short HEAD)
@@ -62,5 +62,5 @@ site: $(HTML) $(AMP) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt targ
 lint: target/css/scsslint
 
 clean:
-	rm -rf target
+	rm -rf target temp
 
