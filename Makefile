@@ -8,8 +8,6 @@ CSS = $(patsubst sass/%.scss, target/css/%.css, $(wildcard sass/[^_]*.scss))
 IMAGES = $(patsubst images/%, target/images/%, $(wildcard images/*))
 REVISION = $(shell git rev-parse --short HEAD)
 
-post = sed -i 's|REVISION|$(REVISION)|g' $(1);
-
 all: target lint site
 
 target:
