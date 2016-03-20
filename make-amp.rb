@@ -8,6 +8,8 @@ require 'date'
 html = ARGV[0]
 name = html.gsub(/^target\//, '/').gsub(/\.html$/, '')
 
+origin = File.read(html)
+
 File.write(
   html,
   Xembly::Xembler.new(
@@ -23,7 +25,7 @@ File.write(
       ATTR "href", "http://www.seedramp.com#{name}.html";
       }
     )
-  ).apply(File.read(html))
+  ).apply(origin)
 )
 
 File.write(
@@ -33,6 +35,10 @@ File.write(
       %{
       XPATH "/html"; ATTR "amp", ""; ATTR "lang", "en";
       XPATH "head";
+
+      ADD "link"; ATTR "rel", "canonical";
+      ATTR "href", "http://www.seedramp.com#{name}.html";
+      UP;
 
       ADD "style";
       ATTR "amp-boilerplate", "";
@@ -50,6 +56,6 @@ File.write(
       UP;
       }
     )
-  ).apply(File.read(html))
+  ).apply(origin)
 )
 
