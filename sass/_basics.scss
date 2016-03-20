@@ -23,6 +23,10 @@ body {
 
 a {
   color: inherit;
+
+  &.none {
+    text-decoration: none;
+  }
 }
 
 p {
@@ -41,6 +45,14 @@ article {
 }
 
 .noprint { @extend %noprint; }
+
+.center {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
 
 .logo {
   img {
