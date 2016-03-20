@@ -3,11 +3,10 @@
     %title We are hiring
     %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'If you are interested in changing the world, we need you'}
-    = Haml::Engine.new(File.read('pages/_head.haml')).render
-    = Haml::Engine.new(File.read('pages/_ga.haml')).render
+    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
   %body
     %article
-      = Haml::Engine.new(File.read('pages/_logo.haml')).render
+      = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
       %h1 We are hiring!
       %p
         If you're interested in changing the world,

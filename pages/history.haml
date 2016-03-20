@@ -3,11 +3,10 @@
     %title History
     %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'Full history of interviews and investmetns made since January 2016'}
-    = Haml::Engine.new(File.read('pages/_head.haml')).render
-    = Haml::Engine.new(File.read('pages/_ga.haml')).render
+    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
   %body
     %article
-      = Haml::Engine.new(File.read('pages/_logo.haml')).render
+      = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
       %p
         History of our 17 interviews so far (6% acceptance rate):
 

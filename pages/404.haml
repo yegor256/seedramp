@@ -3,11 +3,10 @@
     %title Page not found
     %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'Page not found, try something else...'}
-    = Haml::Engine.new(File.read('pages/_head.haml')).render
-    = Haml::Engine.new(File.read('pages/_ga.haml')).render
+    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
   %body
     %article
-      = Haml::Engine.new(File.read('pages/_logo.haml')).render
+      = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
       %p
         Page not found, we're sorry.
         Try our

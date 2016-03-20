@@ -3,11 +3,10 @@
     %title Schedule an interview
     %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'Schedule an interview with us right away, no introductions required'}
-    = Haml::Engine.new(File.read('pages/_head.haml')).render
-    = Haml::Engine.new(File.read('pages/_ga.haml')).render
+    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
   %body
     %article
-      = Haml::Engine.new(File.read('pages/_logo.haml')).render
+      = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
       %h1 Schedule an interview
       %p
         Submit this form and we'll email you back,

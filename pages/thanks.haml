@@ -3,11 +3,10 @@
     %title Thanks!
     %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'Your request for interview is received and will processed soon!'}
-    = Haml::Engine.new(File.read('pages/_head.haml')).render
-    = Haml::Engine.new(File.read('pages/_ga.haml')).render
+    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
   %body
     %article
-      = Haml::Engine.new(File.read('pages/_logo.haml')).render
+      = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
       %h1 Thanks!
       %p
         We received your request for interview and will reply
