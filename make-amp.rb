@@ -54,6 +54,9 @@ File.write(
       ATTR "src", "https://cdn.ampproject.org/v0.js";
       SET "// empty";
       UP;
+
+      XPATH "body";
+      XPATH "//iframe"; REMOVE;
       }
     )
   ).apply(origin)
