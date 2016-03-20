@@ -40,6 +40,7 @@ target/images/%: images/% target
 target/%.html: temp/%.min.html target
 	mkdir -p $$(dirname $@)
 	cp $< $@
+	sed -i 's|REVISION|$(REVISION)|g' $@
 
 temp/%.html: pages/%.haml temp $(DEPS)
 	haml --format=xhtml --style=indented $< > $@
