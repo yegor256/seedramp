@@ -40,13 +40,13 @@ target/%.html: temp/%.min.html target
 	cp $< $@
 	sed -i 's|/canonical.html|http://www.seedramp.com$(patsubst target/%.html,/%.html,$@)|g' $@
 	sed -i 's|REVISION|$(REVISION)|g' $@
-	sed -E -i 's|href="(/[^/])|href="//www.seedramp.com\1|g' $@
 
 temp/%.html: pages/%.haml temp $(DEPS)
 	haml --format=xhtml --style=indented $< > $@
 
 temp/%.amp.html: temp/%.html make-amp.rb
 	./make-amp.rb < $< > $@
+	sed -E -i 's|href="(/[^/])|href="//www.seedramp.com\1|g' $@
 
 temp/%.min.html: temp/%.html
 	html-minifier --lint --minify-css --minify-js --keep-closing-slash --remove-comments --collapse-whitespace --output $@ $<
