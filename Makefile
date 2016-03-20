@@ -38,6 +38,7 @@ target/images/%: images/% target
 target/%.html: temp/%.min.html target
 	mkdir -p $$(dirname $@)
 	cp $< $@
+	sed -i 's|/canonical\.html|http://www.seedramp.com$(patsubst target/%.html,/%.html,$@)|g' $@
 	sed -i 's|REVISION|$(REVISION)|g' $@
 
 temp/%.html: pages/%.haml temp $(DEPS)
