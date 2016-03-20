@@ -57,8 +57,8 @@ apply(
     SET "// empty";
     UP;
 
-    XPATH "body";
     XPATH "//iframe"; REMOVE;
+    XPATH "//script[not(@src)]"; REMOVE;
   }
 )
 
