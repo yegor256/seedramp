@@ -1,9 +1,9 @@
 URL = www.seedramp.com
 HTML = $(patsubst pages/%.haml, target/%.html, $(wildcard pages/[^_]*.haml))
-AMP = $(patsubst %.html, %.amp.html, $(HTML))
 DEPS = $(wildcard pages/[_]*.haml)
 CSS_DEPS = $(wildcard sass/[_]*.scss)
 LOG = $(patsubst log/%.md, target/log/%.html, $(shell find log -name '*.md'))
+AMP = $(patsubst %.html, %.amp.html, $(HTML) $(LOG))
 CSS = $(patsubst sass/%.scss, target/css/%.css, $(wildcard sass/[^_]*.scss))
 IMAGES = $(patsubst images/%, target/images/%, $(wildcard images/*))
 REVISION = $(shell git rev-parse --short HEAD)
@@ -38,7 +38,7 @@ target/images/%: images/% target
 target/%.html: temp/%.min.html target
 	mkdir -p $$(dirname $@)
 	cp $< $@
-	sed -i 's|/canonical.html|http://www.seedramp.com$(patsubst target/%.html,/%.html,$@)|g' $@
+	sed -i 's|CANONICAL|http://www.seedramp.com$(patsubst target/%.html,/%,$@)|g' $@
 	sed -i 's|REVISION|$(REVISION)|g' $@
 
 temp/%.html: pages/%.haml temp $(DEPS)
@@ -46,6 +46,7 @@ temp/%.html: pages/%.haml temp $(DEPS)
 
 temp/%.amp.html: temp/%.html make-amp.rb
 	./make-amp.rb < $< > $@
+	sed -i 's|<img |<amp-img |g' $@
 	sed -E -i 's|href="(/[^/])|href="//www.seedramp.com\1|g' $@
 
 temp/%.min.html: temp/%.html
