@@ -38,8 +38,9 @@ target/images/%: images/% target
 target/%.html: temp/%.min.html target
 	mkdir -p $$(dirname $@)
 	cp $< $@
-	sed -i 's|/canonical\.html|http://www.seedramp.com$(patsubst target/%.html,/%.html,$@)|g' $@
+	sed -i 's|/canonical.html|http://www.seedramp.com$(patsubst target/%.html,/%.html,$@)|g' $@
 	sed -i 's|REVISION|$(REVISION)|g' $@
+	sed -E -i 's|href="(/[^/])|href="//www.seedramp.com\1|g' $@
 
 temp/%.html: pages/%.haml temp $(DEPS)
 	haml --format=xhtml --style=indented $< > $@
