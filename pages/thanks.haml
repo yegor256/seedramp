@@ -1,9 +1,9 @@
 %html
   %head
+    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
     %title Thanks!
     %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'Your request for interview is received and will processed soon!'}
-    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
   %body
     %article
       = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render

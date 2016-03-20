@@ -1,9 +1,9 @@
 %html
   %head
+    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
     %title FAQ
     %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'Frequently asked questions about our interview process from high-tech startups'}
-    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
   %body
     %article
       = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render

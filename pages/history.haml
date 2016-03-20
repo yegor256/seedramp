@@ -1,9 +1,9 @@
 %html
   %head
+    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
     %title History
     %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'Full history of interviews and investmetns made since January 2016'}
-    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
   %body
     %article
       = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
