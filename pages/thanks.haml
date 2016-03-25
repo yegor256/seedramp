@@ -1,12 +1,12 @@
 %html
   %head
-    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
+    = input('pages/_head.haml')
+    = css('plain.css')
     %title Thanks!
-    %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'Your request for interview is received and will processed soon!'}
   %body
     %article
-      = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
+      = input('pages/_logo.haml')
       %h1 Thanks!
       %p
         We received your request for interview and will reply

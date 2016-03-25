@@ -1,12 +1,12 @@
 %html
   %head
-    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
+    = input('pages/_head.haml')
+    = css('plain.css')
     %title History
-    %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'Full history of interviews and investmetns made since January 2016'}
   %body
     %article
-      = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
+      = input('pages/_logo.haml')
       %p
         History of our 19 interviews so far (6% acceptance rate):
 

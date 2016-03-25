@@ -1,12 +1,12 @@
 %html
   %head
-    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
+    = input('pages/_head.haml')
+    = css('plain.css')
     %title Consent
-    %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'Release consent for video interview all our startups are signing before being interviewed'}
   %body
     %article
-      = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
+      = input('pages/_logo.haml')
       %h1
         Release Consent for Video Interview
       %p

@@ -38,16 +38,12 @@ target/images/%: images/% target
 target/%.html: temp/%.min.html target
 	mkdir -p $$(dirname $@)
 	cp $< $@
-	sed -i 's|CANONICAL|http://www.seedramp.com$(patsubst target/%.html,/%,$@)|g' $@
-	sed -i 's|REVISION|$(REVISION)|g' $@
 
 temp/%.html: pages/%.haml temp $(DEPS)
-	haml --format=xhtml --style=indented $< > $@
+	./make-html.rb --revision=$(REVISION) --canonical=http://www.seedramp.com$(patsubst temp/%.html,/%,$@) < $< > $@
 
-temp/%.amp.html: temp/%.html make-amp.rb
-	./make-amp.rb < $< > $@
-	sed -i 's|<img |<amp-img |g' $@
-	sed -E -i 's|href="(/[^/])|href="//www.seedramp.com\1|g' $@
+temp/%.amp.html: pages/%.haml temp $(DEPS)
+	./make-html.rb --amp --revision=$(REVISION) --canonical=http://www.seedramp.com$(patsubst temp/%.html,/%,$@) < $< > $@
 
 temp/%.min.html: temp/%.html
 	html-minifier --lint --minify-css --minify-js --keep-closing-slash --remove-comments --collapse-whitespace --output $@ $<
@@ -58,7 +54,11 @@ target/css/%.css: sass/%.scss target $(CSS_DEPS)
 
 temp/log/%.html: log/%.md temp $(DEPS) make-log.rb
 	mkdir -p `dirname $@`
-	./make-log.rb $< > $@
+	./make-log.rb --path=$< --revision=$(REVISION) --canonical=http://www.seedramp.com$(patsubst temp/%.html,/%,$@) < $< > $@
+
+temp/log/%.amp.html: log/%.md temp $(DEPS) make-log.rb
+	mkdir -p `dirname $@`
+	./make-log.rb --path=$< --amp --revision=$(REVISION) --canonical=http://www.seedramp.com$(patsubst temp/%.html,/%,$@) < $< > $@
 
 site: $(HTML) $(AMP) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt target/sitemap.xml target/rss.xml
 

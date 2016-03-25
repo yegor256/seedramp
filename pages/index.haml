@@ -1,13 +1,14 @@
-%html
+%html{html}
   %head
-    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
+    = input('pages/_head.haml')
+    = css('index.css')
     %title SeedRamp
-    %link{:type=>'text/css', :href=>'/css/index.css?REVISION', :rel=>'stylesheet'}
-    %link{:type=>'text/css', :href=>'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'We make seed investments in high-tech startups after one-hour interviews'}
+    - if !amp
+      %link{:type=>'text/css', :href=>'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', :rel=>'stylesheet'}
   %body
     %article
-      = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
+      = input('pages/_logo.haml')
       %p
         %strong SeedRamp
         is a venture fund.
@@ -25,44 +26,44 @@
         %a.none{:href=>'/schedule.html', :title=>'Schedule an interview now'}
           %button Schedule
 
-    %div.video
-      %div.col
-        %div.film
-          %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/TkRj6Iadk_w?controls=2', :allowfullscreen=>'yes' } &#8203;
-        %span.bad $20,000
-      %div.col
-        %div.film
-          %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/AetgrIGCrSU?controls=2', :allowfullscreen=>'yes' } &#8203;
-        %span.good $5,000
-      %div.col
-        %div.film
-          %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/0X5x-u-1iBE?controls=2', :allowfullscreen=>'yes' } &#8203;
-        %span.bad $25,000
-      %div.col
-        %div.film
-          %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/Zrn2Qdb5Rh4?controls=2', :allowfullscreen=>'yes' } &#8203;
-        %span.bad $20,000
-      %div.col
-        %div.film
-          %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/-gway1us_1E?controls=2', :allowfullscreen=>'yes' } &#8203;
-        %span.bad $20,000
-      %div.col
-        %div.film
-          %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/x-oepkZ94h0?controls=2', :allowfullscreen=>'yes' } &#8203;
-        %span.bad $15,000
-      %div.col
-        %div.film
-          %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/guoibUaVPa4?controls=2', :allowfullscreen=>'yes' } &#8203;
-        %span.bad $20,000
-      %div.col
-        %div.film
-          %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/n8gCO2aHBT0?controls=2', :allowfullscreen=>'yes' } &#8203;
-        %span.bad $20,000
-      %div.col
-        %div.film
-          %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/-mlgZl1KoeI?controls=2', :allowfullscreen=>'yes' } &#8203;
-        %span.good ?
-
+    - if !amp
+      %div.video
+        %div.col
+          %div.film
+            %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/TkRj6Iadk_w?controls=2', :allowfullscreen=>'yes' } &#8203;
+          %span.bad $20,000
+        %div.col
+          %div.film
+            %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/AetgrIGCrSU?controls=2', :allowfullscreen=>'yes' } &#8203;
+          %span.good $5,000
+        %div.col
+          %div.film
+            %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/0X5x-u-1iBE?controls=2', :allowfullscreen=>'yes' } &#8203;
+          %span.bad $25,000
+        %div.col
+          %div.film
+            %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/Zrn2Qdb5Rh4?controls=2', :allowfullscreen=>'yes' } &#8203;
+          %span.bad $20,000
+        %div.col
+          %div.film
+            %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/-gway1us_1E?controls=2', :allowfullscreen=>'yes' } &#8203;
+          %span.bad $20,000
+        %div.col
+          %div.film
+            %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/x-oepkZ94h0?controls=2', :allowfullscreen=>'yes' } &#8203;
+          %span.bad $15,000
+        %div.col
+          %div.film
+            %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/guoibUaVPa4?controls=2', :allowfullscreen=>'yes' } &#8203;
+          %span.bad $20,000
+        %div.col
+          %div.film
+            %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/n8gCO2aHBT0?controls=2', :allowfullscreen=>'yes' } &#8203;
+          %span.bad $20,000
+        %div.col
+          %div.film
+            %iframe{ :class=>'video', :src=>'https://www.youtube.com/embed/-mlgZl1KoeI?controls=2', :allowfullscreen=>'yes' } &#8203;
+          %span.good ?
 
     %article
       %p.clear
@@ -80,14 +81,20 @@
 
     %article
       %p
-        %a.ico{:href=>"https://www.facebook.com/seedramp/"}
-          %i.fa.fa-facebook &#8203;
-        %a.ico{:href=>"https://twitter.com/seedramp"}
-          %i.fa.fa-twitter &#8203;
-        %a.ico{:href=>"https://www.youtube.com/channel/UCcB3-zxKmcsUbBbwvWduZ5A"}
-          %i.fa.fa-youtube &#8203;
-        %a.ico{:href=>"https://www.linkedin.com/company/seedramp"}
-          %i.fa.fa-linkedin &#8203;
+        - if amp
+          %a{:href=>"https://www.facebook.com/seedramp/"} Facebook
+          %a{:href=>"https://twitter.com/seedramp"} Twitter
+          %a{:href=>"https://www.youtube.com/channel/UCcB3-zxKmcsUbBbwvWduZ5A"} YouTube
+          %a{:href=>"https://www.linkedin.com/company/seedramp"} LinkedIn
+        - else
+          %a.ico{:href=>"https://www.facebook.com/seedramp/"}
+            %i.fa.fa-facebook &#8203;
+          %a.ico{:href=>"https://twitter.com/seedramp"}
+            %i.fa.fa-twitter &#8203;
+          %a.ico{:href=>"https://www.youtube.com/channel/UCcB3-zxKmcsUbBbwvWduZ5A"}
+            %i.fa.fa-youtube &#8203;
+          %a.ico{:href=>"https://www.linkedin.com/company/seedramp"}
+            %i.fa.fa-linkedin &#8203;
       %p.hint
         We are also trying to keep our profiles
         up to date at

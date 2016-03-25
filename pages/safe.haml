@@ -1,12 +1,12 @@
 %html
   %head
-    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
+    = input('pages/_head.haml')
+    = css('plain.css')
     %title SAFE
-    %link{:type=>'text/css', :href=>'css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>'Simple agreement for future equity we sign with startups we invest into'}
   %body
     %article
-      = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
+      = input('pages/_logo.haml')
       %p
         THIS INSTRUMENT AND ANY SECURITIES ISSUABLE PURSUANT HERETO
         HAVE NOT BEEN REGISTERED UNDER THE SECURITIES ACT OF 1933,

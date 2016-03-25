@@ -1,14 +1,14 @@
 %html
   %head
-    = Haml::Engine.new(File.read('pages/_head.haml'), :format=>:xhtml).render
+    = input('pages/_head.haml')
+    = css('plain.css')
     %title= yaml['title']
-    %link{:type=>'text/css', :href=>'/css/plain.css?REVISION', :rel=>'stylesheet'}
     %meta{:name=>'description', :content=>yaml['abstract']}
     %meta{:name=>'author', :content=>yaml['author']}
     %meta{:name=>'published', :content=>day}
   %body
     %article
-      = Haml::Engine.new(File.read('pages/_logo.haml'), :format=>:xhtml).render
+      = input('pages/_logo.haml')
       %h1= yaml['title']
       %div#content
         = content
