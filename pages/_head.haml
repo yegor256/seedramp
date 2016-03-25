@@ -1,6 +1,7 @@
 %meta{:charset=>'utf-8'}
 %meta{:name=>'viewport', :content=>'width=device-width,minimum-scale=1,initial-scale=1'}
 %meta{:name=>'keywords', :content=>'seed fund, venture capital, startup, seed investment'}
+%meta{:name=>'published', :content=>day}
 %link{:rel=>'shortcut icon', :href=>"/images/logo-64x64.png?#{revision}"}
 
 - if amp
@@ -10,7 +11,6 @@
     %style{'amp-boilerplate'=>''}
       body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
   %script{:async=>'', :src=>'https://cdn.ampproject.org/v0.js'}
-
 
 - if amp
   %link{:rel=>'canonical', :href=>"#{canonical}.html"}

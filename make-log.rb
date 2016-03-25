@@ -18,7 +18,7 @@ md = STDIN.read
 head, body = md.split(/\n--\n/, 2)
 yaml = YAML.load(head)
 
-Page.new(
+puts Page.new(
   File.read('./pages/_log.haml'),
   opts.to_hash.merge(
     :content => Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(

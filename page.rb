@@ -34,6 +34,9 @@ class Page
       :format => :xhtml,
       :style => :indented
     )
-    engine.render(Base.new(@opts), w@opts)
+    if !@opts.key?(:day)
+      @opts[:day] = Time.now.strftime('%d-%m-%Y')
+    end
+    engine.render(Base.new(@opts), @opts)
   end
 end
