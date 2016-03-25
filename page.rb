@@ -34,11 +34,6 @@ class Page
       :format => :xhtml,
       :style => :indented
     )
-    engine.render(
-      Base.new(@opts),
-      :amp => @opts[:amp],
-      :revision => @opts[:revision],
-      :canonical => @opts[:canonical]
-    )
+    engine.render(Base.new(@opts), w@opts)
   end
 end
