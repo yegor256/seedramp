@@ -13,7 +13,7 @@ class Base
   end
   def css(name)
     if @opts[:amp]
-      '<style>' + File.read("target/css/#{name}") + '</style>'
+      '<style amp-custom>' + File.read("target/css/#{name}") + '</style>'
     else
       "<link type='text/css' href='/css/#{name}?#{@opts[:revision]}' rel='stylesheet'/>"
     end

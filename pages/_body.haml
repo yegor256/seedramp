@@ -1,0 +1,18 @@
+- if amp
+  %amp-analytics{:type=>'googleanalytics', :id=>'analytics'}
+    %script{:type=>'application/json'}
+      :plain
+        {
+          "vars": {
+            "account": "UA-1963507-40"
+          },
+          "triggers": {
+            "defaultPageview": {
+              "on": "visible",
+              "request": "pageview",
+              "vars": {
+                "title": "..."
+              }
+            }
+          }
+        }
