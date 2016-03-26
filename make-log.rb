@@ -22,7 +22,7 @@ puts Page.new(
   File.read('./pages/_log.haml'),
   opts.to_hash.merge(
     :content => Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(
-      Liquid::Template.parse(body).render()
+      Liquid::Template.parse(body).render('amp' => opts.amp?)
     ),
     :yaml => yaml,
     :day => File.dirname(opts[:path]).gsub(/^log\//, '').gsub(/\//, '-')

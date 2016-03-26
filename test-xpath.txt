@@ -1,6 +1,0 @@
-/html
-/html/head
-/html/body
-/html/head/meta[@name='keywords']
-/html/head/meta[@name='description']
-/html/head/meta[@name='published']

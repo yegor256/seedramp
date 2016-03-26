@@ -13,8 +13,12 @@ mood, we started.
 
 <div style='width:50%;float:right;z-index:100;margin-left:1em;'>
   <div class='film'>
-    <iframe class='video' src='https://www.youtube.com/embed/AetgrIGCrSU?controls=2'
-      allowfullscreen=''>&#8203;</iframe>
+    {% if amp %}
+      <amp-youtube data-videoid='AetgrIGCrSU' layout='responsive' width='480' height='270'></amp-youtube>
+    {% else %}
+      <iframe class='video' src='https://www.youtube.com/embed/AetgrIGCrSU?controls=2'
+        allowfullscreen=''>&#8203;</iframe>
+    {% endif %}
   </div>
 </div>
 
