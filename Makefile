@@ -43,7 +43,7 @@ temp/%.html: pages/%.haml temp $(DEPS)
 	./make-html.rb --revision=$(REVISION) --canonical=http://www.seedramp.com$(patsubst temp/%.html,/%,$@) < $< > $@
 
 temp/%.amp.html: pages/%.haml temp $(DEPS)
-	./make-html.rb --amp --revision=$(REVISION) --canonical=http://www.seedramp.com$(patsubst temp/%.html,/%,$@) < $< > $@
+	./make-html.rb --amp --revision=$(REVISION) --canonical=http://www.seedramp.com$(patsubst temp/%.amp.html,/%,$@) < $< > $@
 
 temp/%.min.html: temp/%.html
 	html-minifier --lint --minify-css --minify-js --keep-closing-slash --remove-comments --collapse-whitespace --output $@ $<
