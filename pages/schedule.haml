@@ -10,43 +10,49 @@
     %article
       = input('pages/_logo.haml')
       %h1 Schedule an interview
-      %p
-        Submit this form and we'll email you back,
-        to schedule an interview. We reply to all requests.
-      %form{:method=>"POST", :action=>"//formspree.io/apply@seedramp.com"}
-        %input{:name=>"_next", :type=>"hidden", :value=>"http://www.seedramp.com/thanks.html"}
-        %input{:name=>"_format", :type=>"hidden", :value=>"text"}
-
-        %label Your LinkedIn profile link:
-        %input{:name=>"linkedin", :size=>"40", :type=>"url", :required=>"required"}
-
-        %label Your email:
-        %input{:name=>"email", :size=>"25", :type=>"email", :required=>"required"}
-
-        %label Name of startup:
-        %input{:name=>"_subject", :size=>"19", :type=>"text", :required=>"required"}
-
-        %label How much do you need (USD):
-        %input{:name=>"amount", :size=>"8", :type=>"number", :required=>"required"}
-
-        %label Where:
-        %input{:name=>"where", :type=>"radio", :value=>"in-person", :checked=>"checked"} Palo Alto, CA (your chances are higher)
-        %br
-        %input{:name=>"where", :type=>"radio", :value=>"online"} Online, over Skype
-
-        %label When:
-        %input{:name=>"when", :type=>"radio", :value=>"ASAP"} ASAP
-        %br
-        %input{:name=>"when", :type=>"radio", :value=>"month", :checked=>"checked"} In a few weeks
-        %br
-        %input{:name=>"when", :type=>"radio", :value=>"later"} In a few months
-
-        %label &nbsp;
-        %button{:type=>"submit"} Schedule
-        %label.hint
-          By clicking this button, you automatically
-          accept the terms and conditions of the
+      - if amp
+        %p
+          Email us to
           = succeed "." do
-            %a{:href=>"/consent.html"} Release Consent for Video Interview
+            %a{:href=>'mailto:apply@seedramp.com'} apply@seedramp.com
+      - else
+        %p
+          Submit this form and we'll email you back,
+          to schedule an interview. We reply to all requests.
+        %form{:method=>"POST", :action=>"//formspree.io/apply@seedramp.com"}
+          %input{:name=>"_next", :type=>"hidden", :value=>"http://www.seedramp.com/thanks.html"}
+          %input{:name=>"_format", :type=>"hidden", :value=>"text"}
+
+          %label Your LinkedIn profile link:
+          %input{:name=>"linkedin", :size=>"40", :type=>"url", :required=>"required"}
+
+          %label Your email:
+          %input{:name=>"email", :size=>"25", :type=>"email", :required=>"required"}
+
+          %label Name of startup:
+          %input{:name=>"_subject", :size=>"19", :type=>"text", :required=>"required"}
+
+          %label How much do you need (USD):
+          %input{:name=>"amount", :size=>"8", :type=>"number", :required=>"required"}
+
+          %label Where:
+          %input{:name=>"where", :type=>"radio", :value=>"in-person", :checked=>"checked"} Palo Alto, CA (your chances are higher)
+          %br
+          %input{:name=>"where", :type=>"radio", :value=>"online"} Online, over Skype
+
+          %label When:
+          %input{:name=>"when", :type=>"radio", :value=>"ASAP"} ASAP
+          %br
+          %input{:name=>"when", :type=>"radio", :value=>"month", :checked=>"checked"} In a few weeks
+          %br
+          %input{:name=>"when", :type=>"radio", :value=>"later"} In a few months
+
+          %label &nbsp;
+          %button{:type=>"submit"} Schedule
+          %label.hint
+            By clicking this button, you automatically
+            accept the terms and conditions of the
+            = succeed "." do
+              %a{:href=>"/consent.html"} Release Consent for Video Interview
       %p
         Thanks.
