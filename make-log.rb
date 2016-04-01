@@ -25,6 +25,6 @@ puts Page.new(
       Liquid::Template.parse(body).render('amp' => opts.amp?)
     ),
     :yaml => yaml,
-    :published => File.dirname(opts[:path]).gsub(/^log\//, '').gsub(/\//, '-')
+    :published => Time.parse(File.dirname(opts[:path]).gsub(/^log\//, '').gsub(/\//, '-'))
   )
 ).html

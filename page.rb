@@ -1,4 +1,5 @@
 require 'haml'
+require 'time'
 
 class Base
   def initialize(opts)
@@ -30,7 +31,6 @@ class Base
     end
   end
   def input(path)
-    # puts description
     Page.new(File.read(path), @opts).html
   end
 end
@@ -47,7 +47,7 @@ class Page
       :style => :indented
     )
     if !@opts.key?(:published)
-      @opts[:published] = Time.now.strftime('%d-%m-%Y')
+      @opts[:published] = Time.now
     end
     engine.render(Base.new(@opts), @opts)
   end

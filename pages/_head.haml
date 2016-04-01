@@ -2,7 +2,7 @@
 %meta{:name=>'viewport', :content=>'width=device-width,minimum-scale=1,initial-scale=1'}
 %meta{:name=>'keywords', :content=>'seed fund, venture capital, startup, seed investment'}
 %meta{:name=>'description', :content=>description}
-%meta{:name=>'published', :content=>published}
+%meta{:name=>'published', :content=>published.iso8601}
 %link{:rel=>'shortcut icon', :href=>"/images/logo-64x64.png?#{revision}"}
 %title= title
 
@@ -11,13 +11,35 @@
     :plain
       {
         "@context": "http://schema.org",
-        "@type": "AboutPage",
-        "headline": "SeedRamp, instant investments",
+        "@type": "Article",
+        "mainEntityOfPage":{
+          "@type": "WebPage",
+          "@id": "#{canonical}.html"
+        },
+        "headline": "#{title}",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xpl1/t31.0-8/12747392_769993733132276_1201542466753191468_o.jpg",
+          "height": 866,
+          "width": 487
+        },
+        "datePublished": "#{published.iso8601}",
+        "dateModified": "#{published.iso8601}",
         "author": {
           "@type": "Person",
           "name": "Yegor Bugayenko"
         },
-        "description": "SeedRamp is a unique venture fund with instant investments",
+        "publisher": {
+          "@type": "Organization",
+          "name": "SeedRamp LLC",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "http://www.seedramp.com/images/logo-512x512.png",
+            "width": 512,
+            "height": 512
+          }
+        },
+        "description": "#{description}",
         "keywords": ["seed fund", "venture capital", "startup", "seed investment"]
       }
   %style{'amp-boilerplate'=>''}
