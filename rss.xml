@@ -5,15 +5,14 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport"/>
     <meta content="seed fund, venture capital, startup, seed investment" name="keywords"/>
-    <meta content="2016-02-20" name="published"/>
-    <link href="/images/logo-64x64.png?63210bf" rel="shortcut icon"/>
+    <meta content="We made our first investment decision and we think it was a good one." name="description"/>
+    <meta content="2016-02-20T00:00:00+00:00" name="published"/>
+    <link href="/images/logo-64x64.png?06863ed" rel="shortcut icon"/>
+    <title>First $5,000 for LegalRobot</title>
     <link href="http://www.seedramp.com/log/2016/02/20/LegalRobot.amp.html" rel="amphtml"/>
     <script type="text/javascript">!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-1963507-40","auto"),ga("send","pageview")</script>
-    <link type="text/css" href="/css/plain.css?63210bf" rel="stylesheet"/>
-    <title>First $5,000 for LegalRobot</title>
-    <meta content="We made our first investment decision and we think it was a good one." name="description"/>
+    <link type="text/css" href="/css/plain.css?06863ed" rel="stylesheet"/>
     <meta content="Yegor Bugayenko" name="author"/>
-    <meta content="2016-02-20" name="published"/>
   </head>
   <body>
     <article>
@@ -36,7 +35,7 @@
         <p><strong>Team</strong>. <a href="https://www.linkedin.com/in/danrubins">Dan</a> is a CEO, an architect and a programmer. I was glad to see that. In general, I believe in startups managed and founded by technical people, who are real authors of their products. There are a few freelancers helping him. That's exactly the type of startup team I'm comfortable investing in.</p>
         <p><strong>Cash</strong>. Dan put his own money into this and someone else also added $25,000 a few months ago. His burn rate is around $3,000 per month, which sounds very reasonable. He basically spends most of this money paying his own bills. That's a perfect tactic for a young startup, I believe. He is planning to raise seed or series A money in a few months and needs cash to survive until then. He asked for $20,000 but I offered him $5,000 for the next calendar month. If things go well, the product will be ready for a demo (it wasn't during the interview) and beta-users will produce some traction. He may come back to us again and we'll invest another portion of cash to cover the next calendar month.</p>
         <p>On Monday, Dan emailed me the contract, we signed it electronically, and I've sent him a wire transfer for $5,000. We're partners!</p>
-        <p>Yegor Bugayenko<br/>SeedRamp LLC<br/>2016-02-20</p>
+        <p>Yegor Bugayenko<br/>SeedRamp LLC<br/>2016-02-20 00:00:00 +0000</p>
       </div>
     </article>
   </body>
@@ -49,7 +48,7 @@
   </author>
   <id>seedramp.com</id>
   <title>SeedRamp</title>
-  <updated>2016-03-30T20:30:57.517229+00:00</updated>
+  <updated>2016-04-01T04:35:09.896567+00:00</updated>
   <entry>
     <author>
       <name>Yegor Bugayenko</name>
@@ -70,11 +69,11 @@
   &lt;p&gt;&lt;strong&gt;Team&lt;/strong&gt;. &lt;a href=&quot;https://www.linkedin.com/in/danrubins&quot;&gt;Dan&lt;/a&gt; is a CEO, an architect and a programmer. I was glad to see that. In general, I believe in startups managed and founded by technical people, who are real authors of their products. There are a few freelancers helping him. That's exactly the type of startup team I'm comfortable investing in.&lt;/p&gt;
   &lt;p&gt;&lt;strong&gt;Cash&lt;/strong&gt;. Dan put his own money into this and someone else also added $25,000 a few months ago. His burn rate is around $3,000 per month, which sounds very reasonable. He basically spends most of this money paying his own bills. That's a perfect tactic for a young startup, I believe. He is planning to raise seed or series A money in a few months and needs cash to survive until then. He asked for $20,000 but I offered him $5,000 for the next calendar month. If things go well, the product will be ready for a demo (it wasn't during the interview) and beta-users will produce some traction. He may come back to us again and we'll invest another portion of cash to cover the next calendar month.&lt;/p&gt;
   &lt;p&gt;On Monday, Dan emailed me the contract, we signed it electronically, and I've sent him a wire transfer for $5,000. We're partners!&lt;/p&gt;
-  &lt;p&gt;Yegor Bugayenko&lt;br/&gt;SeedRamp LLC&lt;br/&gt;2016-02-20&lt;/p&gt;
+  &lt;p&gt;Yegor Bugayenko&lt;br/&gt;SeedRamp LLC&lt;br/&gt;2016-02-20 00:00:00 +0000&lt;/p&gt;
 &lt;/div&gt;</summary>
     <title>First $5,000 for LegalRobot</title>
     <updated>2016-02-20T00:00:00+00:00</updated>
     <dc:date>2016-02-20T00:00:00+00:00</dc:date>
   </entry>
-  <dc:date>2016-03-30T20:30:57.517229+00:00</dc:date>
+  <dc:date>2016-04-01T04:35:09.896567+00:00</dc:date>
 </feed>
