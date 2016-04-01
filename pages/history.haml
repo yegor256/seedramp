@@ -1,10 +1,10 @@
 !!! 5
 %html{html}
   %head
+    - self.description = 'Full history of interviews and investmetns made since January 2016'
+    - self.title = 'History'
     = input('pages/_head.haml')
     = css('plain.css')
-    %title History
-    %meta{:name=>'description', :content=>'Full history of interviews and investmetns made since January 2016'}
   %body
     = input('pages/_body.haml')
     %article

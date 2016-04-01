@@ -1,10 +1,10 @@
 !!! 5
 %html{html}
   %head
+    - self.description = 'If you are interested in changing the world, we need you'
+    - self.title = 'We are hiring'
     = input('pages/_head.haml')
     = css('plain.css')
-    %title We are hiring
-    %meta{:name=>'description', :content=>'If you are interested in changing the world, we need you'}
   %body
     = input('pages/_body.haml')
     %article

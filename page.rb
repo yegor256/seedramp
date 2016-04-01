@@ -3,6 +3,10 @@ require 'haml'
 class Base
   def initialize(opts)
     @opts = opts
+    ['title', 'description'].each do |var|
+      eval "def #{var}=(v)\n @opts[:#{var}]=v\nend"
+      eval "def #{var}\n @opts[:#{var}]\nend"
+    end
   end
   def html
     hash = {:lang=>'en'}
@@ -26,6 +30,7 @@ class Base
     end
   end
   def input(path)
+    # puts description
     Page.new(File.read(path), @opts).html
   end
 end
@@ -41,8 +46,8 @@ class Page
       :format => :xhtml,
       :style => :indented
     )
-    if !@opts.key?(:day)
-      @opts[:day] = Time.now.strftime('%d-%m-%Y')
+    if !@opts.key?(:published)
+      @opts[:published] = Time.now.strftime('%d-%m-%Y')
     end
     engine.render(Base.new(@opts), @opts)
   end

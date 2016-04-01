@@ -1,10 +1,10 @@
 !!! 5
 %html{html}
   %head
+    - self.description = 'Your request for interview is received and will processed soon!'
+    - self.title = 'Thanks!'
     = input('pages/_head.haml')
     = css('plain.css')
-    %title Thanks!
-    %meta{:name=>'description', :content=>'Your request for interview is received and will processed soon!'}
   %body
     = input('pages/_body.haml')
     %article

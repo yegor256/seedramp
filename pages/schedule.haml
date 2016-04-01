@@ -1,10 +1,10 @@
 !!! 5
 %html{html}
   %head
+    - self.description = 'Schedule an interview with us right away, no introductions required'
+    - self.title = 'Schedule an interview'
     = input('pages/_head.haml')
     = css('plain.css')
-    %title Schedule an interview
-    %meta{:name=>'description', :content=>'Schedule an interview with us right away, no introductions required'}
   %body
     = input('pages/_body.haml')
     %article

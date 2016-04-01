@@ -1,10 +1,10 @@
 !!! 5
 %html{html}
   %head
+    - self.description = 'Frequently asked questions about our interview process from high-tech startups'
+    - self.title = 'FAQ'
     = input('pages/_head.haml')
     = css('plain.css')
-    %title FAQ
-    %meta{:name=>'description', :content=>'Frequently asked questions about our interview process from high-tech startups'}
   %body
     = input('pages/_body.haml')
     %article

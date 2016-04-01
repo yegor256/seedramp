@@ -1,10 +1,10 @@
 !!! 5
 %html{html}
   %head
+    - self.description = 'Page not found, try something else...'
+    - self.title = 'Page not found'
     = input('pages/_head.haml')
     = css('plain.css')
-    %title Page not found
-    %meta{:name=>'description', :content=>'Page not found, try something else...'}
   %body
     = input('pages/_body.haml')
     %article

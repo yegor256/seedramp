@@ -1,10 +1,10 @@
 !!! 5
 %html{html}
   %head
+    - self.description = 'Release consent for video interview all our startups are signing before being interviewed'
+    - self.title = 'Consent'
     = input('pages/_head.haml')
     = css('plain.css')
-    %title Consent
-    %meta{:name=>'description', :content=>'Release consent for video interview all our startups are signing before being interviewed'}
   %body
     = input('pages/_body.haml')
     %article

@@ -1,11 +1,10 @@
 %html
   %head
+    - self.title = yaml['title']
+    - self.description = yaml['abstract']
     = input('pages/_head.haml')
     = css('plain.css')
-    %title= yaml['title']
-    %meta{:name=>'description', :content=>yaml['abstract']}
     %meta{:name=>'author', :content=>yaml['author']}
-    %meta{:name=>'published', :content=>day}
   %body
     %article
       = input('pages/_logo.haml')
@@ -17,5 +16,5 @@
           %br
           SeedRamp LLC
           %br
-          = day
+          = published
 
