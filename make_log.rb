@@ -21,10 +21,12 @@ yaml = YAML.load(head)
 puts Page.new(
   File.read('./pages/_log.haml'),
   opts.to_hash.merge(
-    :content => Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(
+    content: Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(
       Liquid::Template.parse(body).render('amp' => opts.amp?)
     ),
-    :yaml => yaml,
-    :published => Time.parse(File.dirname(opts[:path]).gsub(/^log\//, '').gsub(/\//, '-'))
+    yaml: yaml,
+    published: Time.parse(
+      File.dirname(opts[:path]).gsub(/^log\//, '').gsub(/\//, '-')
+    )
   )
 ).html

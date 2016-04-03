@@ -58,11 +58,12 @@ temp/log/%.html: log/%.md temp $(DEPS) make_log.rb
 
 temp/log/%.amp.html: log/%.md temp $(DEPS) make_log.rb
 	mkdir -p `dirname $@`
-	./make-log.rb --path=$< --amp --revision=$(REVISION) --canonical=http://www.seedramp.com$(patsubst temp/%.html,/%,$@) < $< > $@
+	./make_log.rb --path=$< --amp --revision=$(REVISION) --canonical=http://www.seedramp.com$(patsubst temp/%.html,/%,$@) < $< > $@
 
 site: $(HTML) $(AMP) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt target/sitemap.xml target/rss.xml
 
 lint: target/css/scsslint
+	rubocop
 
 clean:
 	rm -rf target temp
