@@ -5,7 +5,7 @@ require 'time'
 class Base
   def initialize(opts)
     @opts = opts
-    %w(title, description).each do |var|
+    %w(title description).each do |var|
       eval "def #{var}=(v)\n @opts[:#{var}]=v\nend"
       eval "def #{var}\n @opts[:#{var}]\nend"
     end
