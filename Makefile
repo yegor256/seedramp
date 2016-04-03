@@ -22,10 +22,10 @@ target/css/scsslint: $(CSS)
 target/CNAME: target
 	echo "$(URL)" > target/CNAME
 
-target/sitemap.xml: make-sitemap.rb $(HTML)
+target/sitemap.xml: make_sitemap.rb $(HTML)
 	./make_sitemap.rb > target/sitemap.xml
 
-target/rss.xml: make-rss.rb $(HTML)
+target/rss.xml: make_rss.rb $(HTML)
 	./make_rss.rb > target/rss.xml
 
 target/robots.txt: target
