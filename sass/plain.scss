@@ -12,7 +12,7 @@ body {
 article {
   width: 32 * $em;
   @media print {
-    padding: 0;
+    padding: 1em;
     width: 100%;
   }
 }
@@ -31,6 +31,11 @@ p {
     @media print {
       border-bottom: 0;
     }
+  }
+
+  @media print {
+    margin-bottom: 1em;
+    margin-top: 1em;
   }
 }
 
