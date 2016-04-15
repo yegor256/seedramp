@@ -7,11 +7,11 @@
     <meta content="seed fund, venture capital, startup, seed investment" name="keywords"/>
     <meta content="We made our first investment decision and we think it was a good one." name="description"/>
     <meta content="2016-02-20T00:00:00+00:00" name="published"/>
-    <link href="/images/logo-64x64.png?ee87dea" rel="shortcut icon"/>
+    <link href="/images/logo-64x64.png?d641543" rel="shortcut icon"/>
     <title>First $5,000 for LegalRobot</title>
     <link href="http://www.seedramp.com/log/2016/02/20/LegalRobot.amp.html" rel="amphtml"/>
     <script type="text/javascript">!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-1963507-40","auto"),ga("send","pageview")</script>
-    <link type="text/css" href="/css/plain.css?ee87dea" rel="stylesheet"/>
+    <link type="text/css" href="/css/plain.css?d641543" rel="stylesheet"/>
     <meta content="Yegor Bugayenko" name="author"/>
   </head>
   <body>
@@ -48,7 +48,7 @@
   </author>
   <id>seedramp.com</id>
   <title>SeedRamp</title>
-  <updated>2016-04-14T17:07:41.355628+00:00</updated>
+  <updated>2016-04-15T05:20:07.916215+00:00</updated>
   <entry>
     <author>
       <name>Yegor Bugayenko</name>
@@ -75,5 +75,5 @@
     <updated>2016-02-20T00:00:00+00:00</updated>
     <dc:date>2016-02-20T00:00:00+00:00</dc:date>
   </entry>
-  <dc:date>2016-04-14T17:07:41.355628+00:00</dc:date>
+  <dc:date>2016-04-15T05:20:07.916215+00:00</dc:date>
 </feed>
