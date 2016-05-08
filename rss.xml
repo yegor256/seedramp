@@ -1,3 +1,45 @@
+"target/log/2016/04/12/JobNow.html"
+<?xml version="1.0"?>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport"/>
+    <meta content="seed fund, venture capital, startup, seed investment" name="keywords"/>
+    <meta content="This is our second investment, a rather risky but promising one" name="description"/>
+    <meta content="2016-04-12T00:00:00+00:00" name="published"/>
+    <link href="/images/logo-64x64.png?2adac3a" rel="shortcut icon"/>
+    <title>$5,000 for JobNow</title>
+    <link href="http://www.seedramp.com/log/2016/04/12/JobNow.amp.html" rel="amphtml"/>
+    <script type="text/javascript">!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-1963507-40","auto"),ga("send","pageview")</script>
+    <link type="text/css" href="/css/plain.css?2adac3a" rel="stylesheet"/>
+    <meta content="Yegor Bugayenko" name="author"/>
+  </head>
+  <body>
+    <article>
+      <div class="logo">
+        <a href="/">
+          <img alt="logo" class="noprint" src="/images/logo.svg?REVISION"/>
+        </a>
+      </div>
+      <h1>$5,000 for JobNow</h1>
+      <div id="content">
+        <p><strong>Intro</strong>. This was one of the first online interviews for us. I was not yet sure whether we can invest at all, without seeing and "touching" the candidate. But after all everything went well and easy. You can watch it.</p>
+        <div style="width:50%;float:right;z-index:100;margin-left:1em">
+          <div class="film">
+            <iframe class="video" src="https://www.youtube.com/embed/F-ljB4TPiRE?controls=2">&#x200B;</iframe>
+          </div>
+        </div>
+        <p><strong>Product</strong>. <a href="http://www.jobnow.me">JobNow</a> is a job interview scheduling platform. When you need a contractor for a few hours (a waiter, a chef, or a cashier), just submit that position to the system and wait. Very soon, some candidates will apply and immediately schedule interviews. You won't need to select them, email them, or call them. They will just who up in your calendar and next day in your office. It's literally a job right now solution.</p>
+        <p><strong>Market</strong>. They already have paying customers, according to Roberto. And that customers seem to be happy. I don't think this is entirely true, since the platform needs to have enough candidates to make paying customers happy. However, I was glad to see that Roberto has put the product on the market already and is not afraid of earning first dollars even with the system that is not yet fully implemented.</p>
+        <p><strong>Competition</strong>. There are many platforms for job search, but there is nothing like JobNow. Well, according to my knowledge and Roberto's words. That makes this startups even more interesting.</p>
+        <p><strong>Team</strong>. <a href="https://www.linkedin.com/in/robertoinetti">Roberto</a> is a CEO, an architect and a programmer. That's the configuration I like most of all. Besides that, he's got a pretty successfull career <a href="https://500px.com/robertoinetti">as a photographer</a>. This basically means that he can achieve something.</p>
+        <p><strong>Cash and Investors</strong>. Roberto put his own money into this product. I was going to become the first investor. This is basically was the only negative thing in this deal. Roberto was obviously not fully prepared for raising more money. But he had to be! I strongly adviced him to focus on that in the next few months. We'll see how he will manage that.</p>
+        <p>Right after the interview I prepared SAFE for Roberto, emailed it to him and got his electronic signature. Then, sent him a $5,000 wire transfer. We're partners!</p>
+        <p>Yegor Bugayenko<br/>SeedRamp LLC<br/>2016-04-12 00:00:00 +0000</p>
+      </div>
+    </article>
+  </body>
+</html>
 "target/log/2016/02/20/LegalRobot.html"
 <?xml version="1.0"?>
 <html>
@@ -7,11 +49,11 @@
     <meta content="seed fund, venture capital, startup, seed investment" name="keywords"/>
     <meta content="We made our first investment decision and we think it was a good one." name="description"/>
     <meta content="2016-02-20T00:00:00+00:00" name="published"/>
-    <link href="/images/logo-64x64.png?7b2b7d6" rel="shortcut icon"/>
+    <link href="/images/logo-64x64.png?2adac3a" rel="shortcut icon"/>
     <title>First $5,000 for LegalRobot</title>
     <link href="http://www.seedramp.com/log/2016/02/20/LegalRobot.amp.html" rel="amphtml"/>
     <script type="text/javascript">!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-1963507-40","auto"),ga("send","pageview")</script>
-    <link type="text/css" href="/css/plain.css?7b2b7d6" rel="stylesheet"/>
+    <link type="text/css" href="/css/plain.css?2adac3a" rel="stylesheet"/>
     <meta content="Yegor Bugayenko" name="author"/>
   </head>
   <body>
@@ -48,7 +90,33 @@
   </author>
   <id>seedramp.com</id>
   <title>SeedRamp</title>
-  <updated>2016-05-08T09:08:01.527646+00:00</updated>
+  <updated>2016-05-08T11:51:12.755293+00:00</updated>
+  <entry>
+    <author>
+      <name>Yegor Bugayenko</name>
+    </author>
+    <id>http://www.seedramp.com/log/2016/04/12/JobNow.html</id>
+    <link href="http://www.seedramp.com/log/2016/04/12/JobNow.html"/>
+    <published>2016-04-12T00:00:00+00:00</published>
+    <summary>&lt;div id=&quot;content&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Intro&lt;/strong&gt;. This was one of the first online interviews for us. I was not yet sure whether we can invest at all, without seeing and &quot;touching&quot; the candidate. But after all everything went well and easy. You can watch it.&lt;/p&gt;
+  &lt;div style=&quot;width:50%;float:right;z-index:100;margin-left:1em&quot;&gt;
+    &lt;div class=&quot;film&quot;&gt;
+      &lt;iframe class=&quot;video&quot; src=&quot;https://www.youtube.com/embed/F-ljB4TPiRE?controls=2&quot;&gt;&amp;#x200B;&lt;/iframe&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p&gt;&lt;strong&gt;Product&lt;/strong&gt;. &lt;a href=&quot;http://www.jobnow.me&quot;&gt;JobNow&lt;/a&gt; is a job interview scheduling platform. When you need a contractor for a few hours (a waiter, a chef, or a cashier), just submit that position to the system and wait. Very soon, some candidates will apply and immediately schedule interviews. You won't need to select them, email them, or call them. They will just who up in your calendar and next day in your office. It's literally a job right now solution.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Market&lt;/strong&gt;. They already have paying customers, according to Roberto. And that customers seem to be happy. I don't think this is entirely true, since the platform needs to have enough candidates to make paying customers happy. However, I was glad to see that Roberto has put the product on the market already and is not afraid of earning first dollars even with the system that is not yet fully implemented.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Competition&lt;/strong&gt;. There are many platforms for job search, but there is nothing like JobNow. Well, according to my knowledge and Roberto's words. That makes this startups even more interesting.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Team&lt;/strong&gt;. &lt;a href=&quot;https://www.linkedin.com/in/robertoinetti&quot;&gt;Roberto&lt;/a&gt; is a CEO, an architect and a programmer. That's the configuration I like most of all. Besides that, he's got a pretty successfull career &lt;a href=&quot;https://500px.com/robertoinetti&quot;&gt;as a photographer&lt;/a&gt;. This basically means that he can achieve something.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Cash and Investors&lt;/strong&gt;. Roberto put his own money into this product. I was going to become the first investor. This is basically was the only negative thing in this deal. Roberto was obviously not fully prepared for raising more money. But he had to be! I strongly adviced him to focus on that in the next few months. We'll see how he will manage that.&lt;/p&gt;
+  &lt;p&gt;Right after the interview I prepared SAFE for Roberto, emailed it to him and got his electronic signature. Then, sent him a $5,000 wire transfer. We're partners!&lt;/p&gt;
+  &lt;p&gt;Yegor Bugayenko&lt;br/&gt;SeedRamp LLC&lt;br/&gt;2016-04-12 00:00:00 +0000&lt;/p&gt;
+&lt;/div&gt;</summary>
+    <title>$5,000 for JobNow</title>
+    <updated>2016-04-12T00:00:00+00:00</updated>
+    <dc:date>2016-04-12T00:00:00+00:00</dc:date>
+  </entry>
   <entry>
     <author>
       <name>Yegor Bugayenko</name>
@@ -75,5 +143,5 @@
     <updated>2016-02-20T00:00:00+00:00</updated>
     <dc:date>2016-02-20T00:00:00+00:00</dc:date>
   </entry>
-  <dc:date>2016-05-08T09:08:01.527646+00:00</dc:date>
+  <dc:date>2016-05-08T11:51:12.755293+00:00</dc:date>
 </feed>
