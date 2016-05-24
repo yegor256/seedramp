@@ -12,12 +12,29 @@ table {
   th {
     font-weight: bold;
     text-align: left;
-
   }
 
   td,
   th {
     padding: .3 * $em .5 * $em .3 * $em 0;
     vertical-align: top;
+  }
+
+  @media all and (max-width: $width) {
+    thead {
+      display: none;
+    }
+
+    tr {
+      display: block;
+      padding-bottom: .3 * $em;
+      padding-top: .3 * $em;
+    }
+
+    td {
+      display: inline-block;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
   }
 }

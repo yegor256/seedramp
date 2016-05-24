@@ -17,7 +17,7 @@ temp:
 	mkdir -p temp
 
 target/css/scsslint: $(CSS)
-	scss-lint -c .scss-lint.yml > $@
+	scss-lint -c .scss-lint.yml | tee $@
 
 target/CNAME: target
 	echo "$(URL)" > target/CNAME
