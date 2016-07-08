@@ -5,12 +5,17 @@
     - self.title = 'History'
     = input('pages/_head.haml')
     = css('plain.css')
+    - if !amp
+      :javascript
+
   %body
     = input('pages/_body.haml')
     %article
       = input('pages/_logo.haml')
       %p
-        History of our interviews so far:
+        History of our
+        %span{:id=>'total'}
+        interviews so far:
 
       %table
         %thead
@@ -29,7 +34,6 @@
             %td
               %a{:href=>'http://www.privme.com'} Privme
             %td.right $20k
-            %td
             %td.green
               = succeed ' ' do
                 $10k
