@@ -5,16 +5,13 @@
     - self.title = 'History'
     = input('pages/_head.haml')
     = css('plain.css')
-    - if !amp
-      :javascript
-
   %body
     = input('pages/_body.haml')
     %article
       = input('pages/_logo.haml')
       %p
         History of our
-        %span{:id=>'total'}
+        %strong{:id=>'total'}
         interviews so far:
 
       %table
@@ -416,4 +413,7 @@
             %td.right $12k
             %td.red
               %a{:href=>'https://www.youtube.com/watch?v=rXUz5--si1s'} none
+    - if !amp
+      :javascript
+        document.getElementById('total').innerHTML = document.getElementsByTagName('tr').length + ' ';
 
