@@ -17,18 +17,16 @@ and is an active Facebook user". The restaurant doesn't want to just give
 active and loyal customers. Impressive, huh? I believe, it's the next step after
 Groupon.
 
-<!--
 <div style='width:50%;float:right;z-index:100;margin-left:1em;'>
   <div class='film'>
     {% if amp %}
-      <amp-youtube data-videoid='AetgrIGCrSU' layout='responsive' width='480' height='270'></amp-youtube>
+      <amp-youtube data-videoid='DIfperQ5c2k' layout='responsive' width='480' height='270'></amp-youtube>
     {% else %}
-      <iframe class='video' src='https://www.youtube.com/embed/AetgrIGCrSU?controls=2'
+      <iframe class='video' src='https://www.youtube.com/embed/DIfperQ5c2k?controls=2'
         allowfullscreen=''>&#8203;</iframe>
     {% endif %}
   </div>
 </div>
--->
 
 **Product**.
 [Privme](http://www.privme.com) consists of three pieces, as far as I understood
