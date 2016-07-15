@@ -3,6 +3,12 @@ abstract: Third investment transaction goes to a well done B2C marketing tool.
 author: Yegor Bugayenko
 --
 
+**Update!**: Lakshmi complained about this article and sent me this:
+"We soft launched in Feb 2016 and we signed up 8 national test
+merchants (eg. Five Guys, Yogurtland, Quiznos),
+150+ Bay Area merchants and have 100,000+ deals in the platform."
+Thus, I believe they are doing better than I understood from the interview :)
+
 **Intro**.
 As a user, I like the idea of [Privme](http://www.privme.com),
 a lot. Listen up, you download an
