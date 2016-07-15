@@ -7,11 +7,11 @@
     <meta content="seed fund, venture capital, startup, seed investment" name="keywords"/>
     <meta content="Third investment transaction goes to a well done B2C marketing tool." name="description"/>
     <meta content="2016-07-29T00:00:00+00:00" name="published"/>
-    <link href="/images/logo-64x64.png?037de6f" rel="shortcut icon"/>
+    <link href="/images/logo-64x64.png?97f45aa" rel="shortcut icon"/>
     <title>$10,000 for Privme</title>
     <link href="http://www.seedramp.com/log/2016/07/29/Privme.amp.html" rel="amphtml"/>
     <script type="text/javascript">!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-1963507-40","auto"),ga("send","pageview")</script>
-    <link type="text/css" href="/css/plain.css?037de6f" rel="stylesheet"/>
+    <link type="text/css" href="/css/plain.css?97f45aa" rel="stylesheet"/>
     <meta content="Yegor Bugayenko" name="author"/>
   </head>
   <body>
@@ -23,6 +23,7 @@
       </div>
       <h1>$10,000 for Privme</h1>
       <div id="content">
+        <p><strong>Update!</strong>: Lakshmi complained about this article and sent me this: "We soft launched in Feb 2016 and we signed up 8 national test merchants (eg. Five Guys, Yogurtland, Quiznos), 150+ Bay Area merchants and have 100,000+ deals in the platform." Thus, I believe they are doing better than I understood from the interview :)</p>
         <p><strong>Intro</strong>. As a user, I like the idea of <a href="http://www.privme.com">Privme</a>, a lot. Listen up, you download an app, connect it with your Facebook, Instagram and whatever it is. Then, you let it screen your bank account (just like QuickBooks does, for example) and you're all set. Now Privme knows a lot about your buying habits. It knows where you're eating, how often you check in, how much you're spending, etc. Then, a restaurant across the street downloads another Privme app and literally says: "I will give 25% to everybody who is eating in this town frequently and is an active Facebook user". The restaurant doesn't want to just give 25% to everybody (like Groupon does), but only to those who are potential active and loyal customers. Impressive, huh? I believe, it's the next step after Groupon.</p>
         <div style="width:50%;float:right;z-index:100;margin-left:1em">
           <div class="film">
@@ -49,11 +50,11 @@
     <meta content="seed fund, venture capital, startup, seed investment" name="keywords"/>
     <meta content="This is our second investment, a rather risky but promising one" name="description"/>
     <meta content="2016-04-12T00:00:00+00:00" name="published"/>
-    <link href="/images/logo-64x64.png?037de6f" rel="shortcut icon"/>
+    <link href="/images/logo-64x64.png?97f45aa" rel="shortcut icon"/>
     <title>$5,000 for JobNow</title>
     <link href="http://www.seedramp.com/log/2016/04/12/JobNow.amp.html" rel="amphtml"/>
     <script type="text/javascript">!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-1963507-40","auto"),ga("send","pageview")</script>
-    <link type="text/css" href="/css/plain.css?037de6f" rel="stylesheet"/>
+    <link type="text/css" href="/css/plain.css?97f45aa" rel="stylesheet"/>
     <meta content="Yegor Bugayenko" name="author"/>
   </head>
   <body>
@@ -91,11 +92,11 @@
     <meta content="seed fund, venture capital, startup, seed investment" name="keywords"/>
     <meta content="We made our first investment decision and we think it was a good one." name="description"/>
     <meta content="2016-02-20T00:00:00+00:00" name="published"/>
-    <link href="/images/logo-64x64.png?037de6f" rel="shortcut icon"/>
+    <link href="/images/logo-64x64.png?97f45aa" rel="shortcut icon"/>
     <title>First $5,000 for LegalRobot</title>
     <link href="http://www.seedramp.com/log/2016/02/20/LegalRobot.amp.html" rel="amphtml"/>
     <script type="text/javascript">!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-1963507-40","auto"),ga("send","pageview")</script>
-    <link type="text/css" href="/css/plain.css?037de6f" rel="stylesheet"/>
+    <link type="text/css" href="/css/plain.css?97f45aa" rel="stylesheet"/>
     <meta content="Yegor Bugayenko" name="author"/>
   </head>
   <body>
@@ -132,7 +133,7 @@
   </author>
   <id>seedramp.com</id>
   <title>SeedRamp</title>
-  <updated>2016-07-14T22:15:55.245538+00:00</updated>
+  <updated>2016-07-15T03:20:12.841847+00:00</updated>
   <entry>
     <author>
       <name>Yegor Bugayenko</name>
@@ -141,6 +142,7 @@
     <link href="http://www.seedramp.com/log/2016/07/29/Privme.html"/>
     <published>2016-07-29T00:00:00+00:00</published>
     <summary>&lt;div id=&quot;content&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Update!&lt;/strong&gt;: Lakshmi complained about this article and sent me this: &quot;We soft launched in Feb 2016 and we signed up 8 national test merchants (eg. Five Guys, Yogurtland, Quiznos), 150+ Bay Area merchants and have 100,000+ deals in the platform.&quot; Thus, I believe they are doing better than I understood from the interview :)&lt;/p&gt;
   &lt;p&gt;&lt;strong&gt;Intro&lt;/strong&gt;. As a user, I like the idea of &lt;a href=&quot;http://www.privme.com&quot;&gt;Privme&lt;/a&gt;, a lot. Listen up, you download an app, connect it with your Facebook, Instagram and whatever it is. Then, you let it screen your bank account (just like QuickBooks does, for example) and you're all set. Now Privme knows a lot about your buying habits. It knows where you're eating, how often you check in, how much you're spending, etc. Then, a restaurant across the street downloads another Privme app and literally says: &quot;I will give 25% to everybody who is eating in this town frequently and is an active Facebook user&quot;. The restaurant doesn't want to just give 25% to everybody (like Groupon does), but only to those who are potential active and loyal customers. Impressive, huh? I believe, it's the next step after Groupon.&lt;/p&gt;
   &lt;div style=&quot;width:50%;float:right;z-index:100;margin-left:1em&quot;&gt;
     &lt;div class=&quot;film&quot;&gt;
@@ -211,5 +213,5 @@
     <updated>2016-02-20T00:00:00+00:00</updated>
     <dc:date>2016-02-20T00:00:00+00:00</dc:date>
   </entry>
-  <dc:date>2016-07-14T22:15:55.245538+00:00</dc:date>
+  <dc:date>2016-07-15T03:20:12.841847+00:00</dc:date>
 </feed>
