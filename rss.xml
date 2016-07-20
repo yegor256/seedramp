@@ -7,11 +7,11 @@
     <meta content="seed fund, venture capital, startup, seed investment" name="keywords"/>
     <meta content="Third investment transaction goes to a well done B2C marketing tool." name="description"/>
     <meta content="2016-07-29T00:00:00+00:00" name="published"/>
-    <link href="/images/logo-64x64.png?97f45aa" rel="shortcut icon"/>
+    <link href="/images/logo-64x64.png?f7f89be" rel="shortcut icon"/>
     <title>$10,000 for Privme</title>
     <link href="http://www.seedramp.com/log/2016/07/29/Privme.amp.html" rel="amphtml"/>
     <script type="text/javascript">!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-1963507-40","auto"),ga("send","pageview")</script>
-    <link type="text/css" href="/css/plain.css?97f45aa" rel="stylesheet"/>
+    <link type="text/css" href="/css/plain.css?f7f89be" rel="stylesheet"/>
     <meta content="Yegor Bugayenko" name="author"/>
   </head>
   <body>
@@ -50,11 +50,11 @@
     <meta content="seed fund, venture capital, startup, seed investment" name="keywords"/>
     <meta content="This is our second investment, a rather risky but promising one" name="description"/>
     <meta content="2016-04-12T00:00:00+00:00" name="published"/>
-    <link href="/images/logo-64x64.png?97f45aa" rel="shortcut icon"/>
+    <link href="/images/logo-64x64.png?f7f89be" rel="shortcut icon"/>
     <title>$5,000 for JobNow</title>
     <link href="http://www.seedramp.com/log/2016/04/12/JobNow.amp.html" rel="amphtml"/>
     <script type="text/javascript">!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-1963507-40","auto"),ga("send","pageview")</script>
-    <link type="text/css" href="/css/plain.css?97f45aa" rel="stylesheet"/>
+    <link type="text/css" href="/css/plain.css?f7f89be" rel="stylesheet"/>
     <meta content="Yegor Bugayenko" name="author"/>
   </head>
   <body>
@@ -92,11 +92,11 @@
     <meta content="seed fund, venture capital, startup, seed investment" name="keywords"/>
     <meta content="We made our first investment decision and we think it was a good one." name="description"/>
     <meta content="2016-02-20T00:00:00+00:00" name="published"/>
-    <link href="/images/logo-64x64.png?97f45aa" rel="shortcut icon"/>
+    <link href="/images/logo-64x64.png?f7f89be" rel="shortcut icon"/>
     <title>First $5,000 for LegalRobot</title>
     <link href="http://www.seedramp.com/log/2016/02/20/LegalRobot.amp.html" rel="amphtml"/>
     <script type="text/javascript">!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-1963507-40","auto"),ga("send","pageview")</script>
-    <link type="text/css" href="/css/plain.css?97f45aa" rel="stylesheet"/>
+    <link type="text/css" href="/css/plain.css?f7f89be" rel="stylesheet"/>
     <meta content="Yegor Bugayenko" name="author"/>
   </head>
   <body>
@@ -133,7 +133,7 @@
   </author>
   <id>seedramp.com</id>
   <title>SeedRamp</title>
-  <updated>2016-07-19T03:10:14.201064+00:00</updated>
+  <updated>2016-07-20T00:38:35.507045+00:00</updated>
   <entry>
     <author>
       <name>Yegor Bugayenko</name>
@@ -213,5 +213,5 @@
     <updated>2016-02-20T00:00:00+00:00</updated>
     <dc:date>2016-02-20T00:00:00+00:00</dc:date>
   </entry>
-  <dc:date>2016-07-19T03:10:14.201064+00:00</dc:date>
+  <dc:date>2016-07-20T00:38:35.507045+00:00</dc:date>
 </feed>
