@@ -9,4 +9,4 @@
 
 We give you cash to cover the next calendar month (up to $20k), you give us SAFE.
 
-We make investment decisions in 24 hours, after a one-hour interview (FAQ).
+We make investment decisions instantly after a one-hour interview (FAQ).
