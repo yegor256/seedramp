@@ -2,3 +2,4 @@
 target/
 temp/
 Gemfile.lock
+.DS_Store
