@@ -36,7 +36,7 @@ class Base
     else
       "<iframe class='video'
         src='https://www.youtube.com/embed/#{id}?controls=2'
-        allowfullscreen='yes'>&#8203;</iframe>"
+        frameborder='0' allowfullscreen='yes'>&#8203;</iframe>"
     end
   end
 
