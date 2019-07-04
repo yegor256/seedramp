@@ -17,7 +17,7 @@ temp:
 	mkdir -p temp
 
 target/css/scsslint: $(CSS)
-	scss-lint -c .scss-lint.yml | tee $@
+	bundle exec scss-lint -c .scss-lint.yml | tee $@
 
 target/CNAME: target
 	echo "$(URL)" > target/CNAME
@@ -63,7 +63,7 @@ temp/log/%.amp.html: log/%.md temp $(DEPS) make_log.rb
 site: $(HTML) $(AMP) $(CSS) $(IMAGES) $(LOG) target/CNAME target/robots.txt target/sitemap.xml target/rss.xml
 
 lint: target/css/scsslint
-	rubocop
+	bundle exec rubocop
 
 clean:
 	rm -rf target temp
