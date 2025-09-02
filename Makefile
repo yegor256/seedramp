@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: Copyright (c) 2016-2025 SeedRamp
+# SPDX-License-Identifier: MIT
+
 URL = www.seedramp.com
 HTML = $(patsubst pages/%.haml, target/%.html, $(wildcard pages/[^_]*.haml))
 DEPS = $(wildcard pages/[_]*.haml)

@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: Copyright (c) 2016-2025 SeedRamp
+# SPDX-License-Identifier: MIT
 # frozen_string_literal: true
 
 require 'haml'

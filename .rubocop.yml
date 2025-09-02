@@ -1,4 +1,11 @@
+# SPDX-FileCopyrightText: Copyright (c) 2016-2025 SeedRamp
+# SPDX-License-Identifier: MIT
+---
 AllCops:
-    NewCops: enable
+  NewCops: enable
 Security/Eval:
   Enabled: false
+require:
+  - rubocop-rake
+  - rubocop-minitest
+  - rubocop-performance

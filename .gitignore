@@ -1,6 +1,14 @@
+.bundle/
 .claude/
 .DS_Store
+.idea/
 .sass-cache/
+.yardoc/
+coverage/
+doc/
 Gemfile.lock
+node_modules/
+rdoc/
 target/
 temp/
+vendor/

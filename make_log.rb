@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# SPDX-FileCopyrightText: Copyright (c) 2016-2025 SeedRamp
+# SPDX-License-Identifier: MIT
 # frozen_string_literal: true
 
 $stdout.sync = true
@@ -28,7 +30,7 @@ puts Page.new(
     ),
     yaml: yaml,
     published: Time.parse(
-      File.dirname(opts[:path]).gsub(%r{^log/}, '').gsub(%r{/}, '-')
+      File.dirname(opts[:path]).gsub(%r{^log/}, '').tr('/', '-')
     )
   )
 ).html
