@@ -19,7 +19,7 @@ opts = Slop.parse do |o|
 end
 
 md = $stdin.read
-head, body = md.split(/\n--\n/, 2)
+head, body = md.split("\n--\n", 2)
 yaml = YAML.safe_load(head)
 
 puts Page.new(

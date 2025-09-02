@@ -5,7 +5,7 @@ AllCops:
   NewCops: enable
 Security/Eval:
   Enabled: false
-require:
+plugins:
   - rubocop-rake
   - rubocop-minitest
   - rubocop-performance

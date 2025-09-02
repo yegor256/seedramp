@@ -11,7 +11,6 @@ class Base
     @opts = opts
   end
 
-  # rubocop:disable Lint/MissingSuper
   def method_missing(method_name, *args, &_block)
     if method_name.to_s.end_with?('=')
       key = method_name.to_s.chomp('=').to_sym
@@ -24,7 +23,6 @@ class Base
   def respond_to_missing?(_method_name, _include_private = false)
     true
   end
-  # rubocop:enable Lint/MissingSuper
 
   def html
     hash = { lang: 'en' }
