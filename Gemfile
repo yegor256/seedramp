@@ -4,6 +4,7 @@
 
 source 'https://rubygems.org'
 
+gem 'base64', '~>0.3'
 gem 'haml', '~>6.3'
 gem 'jslint', '~>1.2'
 gem 'liquid', '~>3.0'
