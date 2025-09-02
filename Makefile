@@ -1,6 +1,12 @@
 # SPDX-FileCopyrightText: Copyright (c) 2016-2025 SeedRamp
 # SPDX-License-Identifier: MIT
 
+.PHONY: all clean test
+.ONESHELL:
+.SHELLFLAGS := -e -o pipefail -c
+.SECONDARY:
+SHELL := bash
+
 URL = www.seedramp.com
 HTML = $(patsubst pages/%.haml, target/%.html, $(wildcard pages/[^_]*.haml))
 DEPS = $(wildcard pages/[_]*.haml)
