@@ -75,4 +75,3 @@ promised Lakshmi to introduce him to a number of investors I know.
 
 So, we signed SAFE and I've mailed them a check for $10K.
 We're partners!
-

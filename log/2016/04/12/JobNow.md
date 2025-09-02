@@ -58,4 +58,3 @@ months. We'll see how he will manage that.
 Right after the interview I prepared SAFE for Roberto, emailed it to him
 and got his electronic signature. Then, sent him a $5,000 wire transfer.
 We're partners!
-

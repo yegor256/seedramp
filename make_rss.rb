@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-STDOUT.sync = true
+# frozen_string_literal: true
+
+$stdout.sync = true
 
 require 'rss'
 require 'nokogiri'
@@ -18,8 +20,9 @@ rss = RSS::Maker.make('atom') do |atom|
       xml = Nokogiri::XML.parse(File.read(file))
       atom.items.new_item do |item|
         puts xml
-        time = Time.parse(xml.xpath('//meta[@name="published"]/@content')[0])
-        url = file.gsub(/^target\//, 'http://www.seedramp.com/')
+        published_content = xml.xpath('//meta[@name="published"]/@content')[0]
+        time = published_content ? Time.parse(published_content.to_s) : Time.now
+        url = file.gsub(%r{^target/}, 'http://www.seedramp.com/')
         item.id = url
         item.link = url
         item.title = xml.xpath('//title/text()')

@@ -1,11 +1,13 @@
 #!/usr/bin/env ruby
-STDOUT.sync = true
+# frozen_string_literal: true
+
+$stdout.sync = true
 
 require 'yaml'
 require 'liquid'
 require 'redcarpet'
 require 'slop'
-require './page.rb'
+require './page'
 
 opts = Slop.parse do |o|
   o.string '--path', 'log path'
@@ -14,9 +16,9 @@ opts = Slop.parse do |o|
   o.bool '--amp', 'enable AMP mode', default: false
 end
 
-md = STDIN.read
+md = $stdin.read
 head, body = md.split(/\n--\n/, 2)
-yaml = YAML.load(head)
+yaml = YAML.safe_load(head)
 
 puts Page.new(
   File.read('./pages/_log.haml'),
@@ -26,7 +28,7 @@ puts Page.new(
     ),
     yaml: yaml,
     published: Time.parse(
-      File.dirname(opts[:path]).gsub(/^log\//, '').gsub(/\//, '-')
+      File.dirname(opts[:path]).gsub(%r{^log/}, '').gsub(%r{/}, '-')
     )
   )
 ).html

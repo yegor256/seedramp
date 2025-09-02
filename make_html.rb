@@ -1,8 +1,10 @@
 #!/usr/bin/env ruby
-STDOUT.sync = true
+# frozen_string_literal: true
+
+$stdout.sync = true
 
 require 'slop'
-require './page.rb'
+require './page'
 
 opts = Slop.parse do |o|
   o.string '--revision', 'Git revision'
@@ -10,4 +12,4 @@ opts = Slop.parse do |o|
   o.bool '--amp', 'enable AMP mode', default: false
 end
 
-puts Page.new(STDIN.read, opts.to_hash).html
+puts Page.new($stdin.read, opts.to_hash).html

@@ -50,7 +50,7 @@ temp/%.min.html: temp/%.html
 
 target/css/%.css: sass/%.scss target $(CSS_DEPS)
 	mkdir -p target/css
-	sass --style=compressed --sourcemap=none $< $@
+	sass --style=compressed $< $@
 
 temp/log/%.html: log/%.md temp $(DEPS) make_log.rb
 	mkdir -p `dirname $@`
@@ -67,4 +67,3 @@ lint: target/css/scsslint
 
 clean:
 	rm -rf target temp
-

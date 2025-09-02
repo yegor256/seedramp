@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'haml'
 require 'time'
 
@@ -5,11 +7,22 @@ require 'time'
 class Base
   def initialize(opts)
     @opts = opts
-    %w(title description).each do |var|
-      eval "def #{var}=(v)\n @opts[:#{var}]=v\nend"
-      eval "def #{var}\n @opts[:#{var}]\nend"
+  end
+
+  # rubocop:disable Lint/MissingSuper
+  def method_missing(method_name, *args, &_block)
+    if method_name.to_s.end_with?('=')
+      key = method_name.to_s.chomp('=').to_sym
+      @opts[key] = args.first
+    else
+      @opts[method_name.to_sym]
     end
   end
+
+  def respond_to_missing?(_method_name, _include_private = false)
+    true
+  end
+  # rubocop:enable Lint/MissingSuper
 
   def html
     hash = { lang: 'en' }
@@ -19,9 +32,7 @@ class Base
 
   def css(name)
     if @opts[:amp]
-      '<style amp-custom="amp-custom">' +
-      File.read("target/css/#{name}") +
-      '</style>'
+      "<style amp-custom='amp-custom'>#{File.read("target/css/#{name}")}</style>"
     else
       "<link type='text/css'
         href='/css/#{name}?#{@opts[:revision]}'
@@ -53,12 +64,7 @@ class Page
   end
 
   def html
-    engine = Haml::Engine.new(
-      @haml,
-      format: :xhtml,
-      style: :indented
-    )
     @opts[:published] = Time.now unless @opts.key?(:published)
-    engine.render(Base.new(@opts), @opts)
+    Haml::Template.new { @haml }.render(Base.new(@opts))
   end
 end

@@ -1,2 +1,4 @@
-Lint/Eval:
+AllCops:
+    NewCops: enable
+Security/Eval:
   Enabled: false

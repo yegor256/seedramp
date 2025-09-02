@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-STDOUT.sync = true
+# frozen_string_literal: true
+
+$stdout.sync = true
 
 require 'nokogiri'
 require 'date'
@@ -14,7 +16,7 @@ xml = Nokogiri::XML::Builder.new do |x|
   x.urlset(attrs) do
     Dir['target/**/*.html'].each do |file|
       x.url do |url|
-        url.loc file.gsub(/^target\//, 'http://www.seedramp.com/')
+        url.loc file.gsub(%r{^target/}, 'http://www.seedramp.com/')
         url.lastmod today
       end
     end
