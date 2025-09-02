@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: Copyright (c) 2016-2025 SeedRamp
 # SPDX-License-Identifier: MIT
 
-.PHONY: all clean test
+.PHONY: all clean test site
 .ONESHELL:
 .SHELLFLAGS := -e -o pipefail -c
 .SECONDARY:
