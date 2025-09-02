@@ -6,7 +6,7 @@ source 'https://rubygems.org'
 
 gem 'haml', '~>6.3'
 gem 'jslint', '~>1.2'
-gem 'liquid', '~>3.0'
+gem 'liquid', '~>5.0'
 gem 'nokogiri', '~>1.8'
 gem 'redcarpet', '~>3.5'
 gem 'rubocop', '~>0.24'
