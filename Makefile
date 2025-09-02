@@ -48,10 +48,10 @@ target/%.html: temp/%.min.html target
 	mkdir -p $$(dirname $@)
 	cp $< $@
 
-temp/%.html: pages/%.haml temp $(DEPS)
+temp/%.html: pages/%.haml temp $(DEPS) $(CSS)
 	bundle exec ./make_html.rb --revision=$(REVISION) --canonical=http://www.seedramp.com$(patsubst temp/%.html,/%,$@) < $< > $@
 
-temp/%.amp.html: pages/%.haml temp $(DEPS)
+temp/%.amp.html: pages/%.haml temp $(DEPS) $(CSS)
 	bundle exec ./make_html.rb --amp --revision=$(REVISION) --canonical=http://www.seedramp.com$(patsubst temp/%.amp.html,/%,$@) < $< > $@
 
 temp/%.min.html: temp/%.html
