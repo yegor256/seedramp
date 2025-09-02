@@ -16,10 +16,14 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 16
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3
           bundler-cache: true
+      - run: npm install -g html-minifier
       - run: bundle config set --global path "$(pwd)/vendor/bundle"
       - run: bundle install --no-color
       - run: make -e
