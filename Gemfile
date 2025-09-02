@@ -11,7 +11,7 @@ gem 'liquid', '~>3.0'
 gem 'nokogiri', '~>1.8'
 gem 'redcarpet', '~>3.5'
 gem 'rss', '~>0.3'
-gem 'rubocop', '~>0.24'
+gem 'rubocop', '~>1.0'
 gem 'rubocop-minitest', '>0', require: false
 gem 'rubocop-performance', '>0', require: false
 gem 'rubocop-rake', '>0', require: false
