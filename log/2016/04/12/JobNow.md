@@ -44,7 +44,7 @@ startups even more interesting.
 **Team**.
 [Roberto](https://www.linkedin.com/in/robertoinetti)
 is a CEO, an architect and a programmer. That's the configuration
-I like most of all. Besides that, he's got a pretty successfull
+I like most of all. Besides that, he's got a pretty successful
 career [as a photographer](https://500px.com/robertoinetti). This basically
 means that he can achieve something.
 
@@ -52,7 +52,7 @@ means that he can achieve something.
 Roberto put his own money into this product. I was going to become the
 first investor. This is basically was the only negative thing in this
 deal. Roberto was obviously not fully prepared for raising more money. But
-he had to be! I strongly adviced him to focus on that in the next few
+he had to be! I strongly advised him to focus on that in the next few
 months. We'll see how he will manage that.
 
 Right after the interview I prepared SAFE for Roberto, emailed it to him
