@@ -11,9 +11,9 @@
     - if !amp
       %link{:type=>'text/css', :href=>'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', :rel=>'stylesheet'}
   %body
-    = input('pages/_body.haml')
+    != input('pages/_body.haml')
     %article
-      = input('pages/_logo.haml')
+      != input('pages/_logo.haml')
       %p
         %strong SeedRamp
         is a venture fund.
@@ -36,39 +36,39 @@
     %div.video
       %div.col
         %div.film
-          = youtube('AetgrIGCrSU')
+          != youtube('AetgrIGCrSU')
         %span.good $5,000
       %div.col
         %div.film
-          = youtube('F-ljB4TPiRE')
+          != youtube('F-ljB4TPiRE')
         %span.good $5,000
       %div.col
         %div.film
-          = youtube('DIfperQ5c2k')
+          != youtube('DIfperQ5c2k')
         %span.good $10,000
       %div.col
         %div.film
-          = youtube('mRedA8rC70o')
+          != youtube('mRedA8rC70o')
         %span.bad $4,000
       %div.col
         %div.film
-          = youtube('8AbhFjP1pWc')
+          != youtube('8AbhFjP1pWc')
         %span.bad $12,000
       %div.col
         %div.film
-          = youtube('eoiLX9qoMws')
+          != youtube('eoiLX9qoMws')
         %span.bad $50,000
       %div.col
         %div.film
-          = youtube('4I9bRDSupm4')
+          != youtube('4I9bRDSupm4')
         %span.bad $20,000
       %div.col
         %div.film
-          = youtube('sT_eU0hvCOA')
+          != youtube('sT_eU0hvCOA')
         %span.bad $20,000
       %div.col
         %div.film
-          = youtube('8JjNI9tVEOw')
+          != youtube('8JjNI9tVEOw')
         %span.bad $12,000
 
     %article
@@ -116,4 +116,4 @@
       %p.hint
         %a{href: 'https://www.sixnines.io/h/bbf6'}
           %img{src: 'https://www.sixnines.io/b/bbf6?style=flat', alt: 'Availability'}
-    = input('pages/_tail.haml')
+    != input('pages/_tail.haml')
