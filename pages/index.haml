@@ -20,8 +20,9 @@
       %p
         We give you cash to cover the next calendar month
         (up to <strong>$20k</strong>); you give us
-        != succeed "." do
-          %a{:href=>"/safe.html"} SAFE
+        = ' '
+        %a{:href=>"/safe.html"}> SAFE
+        = '.'
       %p
         We make investment decisions
         %strong instantly
@@ -106,11 +107,13 @@
         up to date at
         %a{:href=>"https://angel.co/seedramp"} AngelList
         and
-        != succeed "." do
-          %a{:href=>"https://www.crunchbase.com/organization/seedramp"} CrunchBase
+        = ' '
+        %a{:href=>"https://www.crunchbase.com/organization/seedramp"}<> CrunchBase
+        = '.'
         If you have any questions, don't hesitate to
-        != succeed "." do
-          %a{:href=>"mailto:team@seedramp.com"} email
+        = ' '
+        %a{:href=>"mailto:team@seedramp.com"}<> email
+        = '.'
       %p.hint
         &#169; SeedRamp 2026
       %p.hint

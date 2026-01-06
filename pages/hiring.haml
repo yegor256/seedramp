@@ -19,9 +19,9 @@
         but you can volunteer.
       %p
         Shoot us an
-        != succeed "," do
-          %a{:href=>"mailto:volunteer@seedramp.com"} email
-        we'll discuss.
+        = ' '
+        %a{:href=>"mailto:volunteer@seedramp.com"}<> email
+        , we'll discuss.
       %p
         Thanks.
     != input('pages/_tail.haml')
