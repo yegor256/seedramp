@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# SPDX-FileCopyrightText: Copyright (c) 2016-2025 SeedRamp
+# SPDX-FileCopyrightText: Copyright (c) 2016-2026 SeedRamp
 # SPDX-License-Identifier: MIT
 # frozen_string_literal: true
 
