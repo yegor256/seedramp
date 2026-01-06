@@ -6,8 +6,8 @@
   %head
     - self.description = 'We make seed investments in high-tech startups after one-hour interviews'
     - self.title = 'SeedRamp'
-    = input('pages/_head.haml')
-    = css('index.css')
+    != input('pages/_head.haml')
+    != css('index.css')
     - if !amp
       %link{:type=>'text/css', :href=>'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', :rel=>'stylesheet'}
   %body
@@ -19,7 +19,7 @@
         is a venture fund.
       %p
         We give you cash to cover the next calendar month
-        (up to <strong>$20k</strong>), you give us
+        (up to <strong>$20k</strong>); you give us
         = succeed "." do
           %a{:href=>"/safe.html"} SAFE
       %p
@@ -108,7 +108,7 @@
         and
         = succeed "." do
           %a{:href=>"https://www.crunchbase.com/organization/seedramp"} CrunchBase
-        If any questions, don't hesitate to
+        If you have any questions, don't hesitate to
         = succeed "." do
           %a{:href=>"mailto:team@seedramp.com"} email
       %p.hint
