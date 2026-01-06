@@ -10,3 +10,7 @@
 We give you cash to cover the next calendar month (up to $20k), you give us SAFE.
 
 We make investment decisions instantly after a one-hour interview (FAQ).
+
+# How to Contribute
+
+Just run `make`.
