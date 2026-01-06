@@ -27,3 +27,9 @@ jobs:
       - run: bundle config set --global path "$(pwd)/vendor/bundle"
       - run: bundle install --no-color
       - run: make -e
+      - uses: JamesIves/github-pages-deploy-action@v4.7.3
+        if: github.ref == 'refs/heads/master'
+        with:
+          branch: gh-pages
+          folder: target
+          clean: true
