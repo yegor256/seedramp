@@ -5,7 +5,7 @@
 source 'https://rubygems.org'
 
 gem 'base64', '~>0.3'
-gem 'haml', '~>6.3'
+gem 'haml', '~>7.0'
 gem 'jslint', '~>1.2'
 gem 'liquid', '~>3.0'
 gem 'nokogiri', '~>1.8'
