@@ -5,19 +5,19 @@
   %head
     - self.title = yaml['title']
     - self.description = yaml['abstract']
-    = input('pages/_head.haml')
-    = css('plain.css')
+    != input('pages/_head.haml')
+    != css('plain.css')
     %meta{:name=>'author', :content=>yaml['author']}
   %body
     %article
-      = input('pages/_logo.haml')
+      != input('pages/_logo.haml')
       %h1= yaml['title']
       %div#content
-        = content
+        != content
         %p
-          = yaml['author']
+          != yaml['author']
           %br
           SeedRamp LLC
           %br
-          = published
-    = input('pages/_tail.haml')
+          != published
+    != input('pages/_tail.haml')

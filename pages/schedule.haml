@@ -6,18 +6,18 @@
   %head
     - self.description = 'Schedule an interview with us right away, no introductions required'
     - self.title = 'Schedule an interview'
-    = input('pages/_head.haml')
-    = css('plain.css')
+    != input('pages/_head.haml')
+    != css('plain.css')
   %body
-    = input('pages/_body.haml')
+    != input('pages/_body.haml')
     %article
-      = input('pages/_logo.haml')
+      != input('pages/_logo.haml')
       %h1 Schedule an interview
       - if amp
         %p
           Since you're on mobile, we can't ask you to fill the form.
           Just email us to
-          = succeed "." do
+          != succeed "." do
             %a{:href=>'mailto:apply@seedramp.com'} apply@seedramp.com
       - else
         %p
@@ -56,8 +56,8 @@
           %label.hint
             By clicking this button, you automatically
             accept the terms and conditions of the
-            = succeed "." do
+            != succeed "." do
               %a{:href=>"/consent.html"} Release Consent for Video Interview
       %p
         Thanks.
-    = input('pages/_tail.haml')
+    != input('pages/_tail.haml')

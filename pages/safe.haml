@@ -6,12 +6,12 @@
   %head
     - self.description = 'Simple agreement for future equity we sign with startups we invest in'
     - self.title = 'SAFE'
-    = input('pages/_head.haml')
-    = css('plain.css')
+    != input('pages/_head.haml')
+    != css('plain.css')
   %body
-    = input('pages/_body.haml')
+    != input('pages/_body.haml')
     %article
-      = input('pages/_logo.haml')
+      != input('pages/_logo.haml')
       %p
         THIS INSTRUMENT AND ANY SECURITIES ISSUABLE PURSUANT HERETO
         HAVE NOT BEEN REGISTERED UNDER THE SECURITIES ACT OF 1933,
@@ -450,4 +450,4 @@
         555 Bryant St, Ste 470, Palo Alto, CA 94301
         %br
         safe@seedramp.com
-    = input('pages/_tail.haml')
+    != input('pages/_tail.haml')

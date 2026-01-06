@@ -6,12 +6,12 @@
   %head
     - self.description = 'If you are interested in changing the world, we need you'
     - self.title = 'We are hiring'
-    = input('pages/_head.haml')
-    = css('plain.css')
+    != input('pages/_head.haml')
+    != css('plain.css')
   %body
-    = input('pages/_body.haml')
+    != input('pages/_body.haml')
     %article
-      = input('pages/_logo.haml')
+      != input('pages/_logo.haml')
       %h1 We are hiring!
       %p
         If you're interested in changing the world,
@@ -19,9 +19,9 @@
         but you can volunteer.
       %p
         Shoot us an
-        = succeed "," do
+        != succeed "," do
           %a{:href=>"mailto:volunteer@seedramp.com"} email
         we'll discuss.
       %p
         Thanks.
-    = input('pages/_tail.haml')
+    != input('pages/_tail.haml')

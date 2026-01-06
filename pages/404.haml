@@ -6,15 +6,15 @@
   %head
     - self.description = 'Page not found, try something else...'
     - self.title = 'Page not found'
-    = input('pages/_head.haml')
-    = css('plain.css')
+    != input('pages/_head.haml')
+    != css('plain.css')
   %body
-    = input('pages/_body.haml')
+    != input('pages/_body.haml')
     %article
-      = input('pages/_logo.haml')
+      != input('pages/_logo.haml')
       %p
         Page not found, we're sorry.
         Try our
         %a{:href=>'/'} index
         page.
-    = input('pages/_tail.haml')
+    != input('pages/_tail.haml')

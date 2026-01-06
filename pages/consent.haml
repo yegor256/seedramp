@@ -6,12 +6,12 @@
   %head
     - self.description = 'Release consent for video interview that all our startups sign before being interviewed'
     - self.title = 'Consent'
-    = input('pages/_head.haml')
-    = css('plain.css')
+    != input('pages/_head.haml')
+    != css('plain.css')
   %body
-    = input('pages/_body.haml')
+    != input('pages/_body.haml')
     %article
-      = input('pages/_logo.haml')
+      != input('pages/_logo.haml')
       %h1
         Release Consent for Video Interview
       %p
@@ -42,4 +42,4 @@
         %span.data address
         %br
         %span.data email
-    = input('pages/_tail.haml')
+    != input('pages/_tail.haml')

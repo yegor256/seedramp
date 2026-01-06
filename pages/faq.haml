@@ -6,12 +6,12 @@
   %head
     - self.description = 'Frequently asked questions about our interview process from high-tech startups'
     - self.title = 'FAQ'
-    = input('pages/_head.haml')
-    = css('plain.css')
+    != input('pages/_head.haml')
+    != css('plain.css')
   %body
-    = input('pages/_body.haml')
+    != input('pages/_body.haml')
     %article
-      = input('pages/_logo.haml')
+      != input('pages/_logo.haml')
       %h1 How does it work?
       %p
         You schedule an interview.
@@ -99,4 +99,4 @@
         may pass, of course. We usually send 5-10 intro emails. Besides
         that we will publish a press release about our investment. That's it.
         After you get our money, you're on your own.
-    = input('pages/_tail.haml')
+    != input('pages/_tail.haml')
