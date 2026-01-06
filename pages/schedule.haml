@@ -17,8 +17,9 @@
         %p
           Since you're on mobile, we can't ask you to fill the form.
           Just email us to
-          != succeed "." do
-            %a{:href=>'mailto:apply@seedramp.com'} apply@seedramp.com
+          = ' '
+          %a{:href=>'mailto:apply@seedramp.com'}<> apply@seedramp.com
+          = '.'
       - else
         %p
           Submit this form and we'll email you back,
@@ -56,8 +57,9 @@
           %label.hint
             By clicking this button, you automatically
             accept the terms and conditions of the
-            != succeed "." do
-              %a{:href=>"/consent.html"} Release Consent for Video Interview
+            = ' '
+            %a{:href=>"/consent.html"}<> Release Consent for Video Interview
+            = '.'
       %p
         Thanks.
     != input('pages/_tail.haml')
