@@ -7,10 +7,10 @@
         <meta content="seed fund, venture capital, startup, seed investment" name="keywords">
           <meta content="Third investment transaction goes to a well done B2C marketing tool." name="description">
             <meta content="2016-07-29T00:00:00+00:00" name="published">
-              <link href="/images/logo-64x64.png?f69bed1" rel="shortcut icon">
+              <link href="/images/logo-64x64.png?aaa991d" rel="shortcut icon">
                 <title>$10,000 for Privme</title>
                 <link href="https://www.seedramp.com/log/2016/07/29/Privme.amp.html" rel="amphtml">
-                  <link type="text/css" href="/css/plain.css?f69bed1" rel="stylesheet"/>
+                  <link type="text/css" href="/css/plain.css?aaa991d" rel="stylesheet"/>
                   <meta content="Yegor Bugayenko" name="author"/>
                   <body>
                     <article>
@@ -57,10 +57,10 @@
         <meta content="seed fund, venture capital, startup, seed investment" name="keywords">
           <meta content="This is our second investment, a rather risky but promising one" name="description">
             <meta content="2016-04-12T00:00:00+00:00" name="published">
-              <link href="/images/logo-64x64.png?f69bed1" rel="shortcut icon">
+              <link href="/images/logo-64x64.png?aaa991d" rel="shortcut icon">
                 <title>$5,000 for JobNow</title>
                 <link href="https://www.seedramp.com/log/2016/04/12/JobNow.amp.html" rel="amphtml">
-                  <link type="text/css" href="/css/plain.css?f69bed1" rel="stylesheet"/>
+                  <link type="text/css" href="/css/plain.css?aaa991d" rel="stylesheet"/>
                   <meta content="Yegor Bugayenko" name="author"/>
                   <body>
                     <article>
@@ -106,10 +106,10 @@
         <meta content="seed fund, venture capital, startup, seed investment" name="keywords">
           <meta content="We made our first investment decision and we think it was a good one." name="description">
             <meta content="2016-02-20T00:00:00+00:00" name="published">
-              <link href="/images/logo-64x64.png?f69bed1" rel="shortcut icon">
+              <link href="/images/logo-64x64.png?aaa991d" rel="shortcut icon">
                 <title>First $5,000 for LegalRobot</title>
                 <link href="https://www.seedramp.com/log/2016/02/20/LegalRobot.amp.html" rel="amphtml">
-                  <link type="text/css" href="/css/plain.css?f69bed1" rel="stylesheet"/>
+                  <link type="text/css" href="/css/plain.css?aaa991d" rel="stylesheet"/>
                   <meta content="Yegor Bugayenko" name="author"/>
                   <body>
                     <article>
@@ -154,7 +154,7 @@
   </author>
   <id>seedramp.com</id>
   <title>SeedRamp</title>
-  <updated>2026-01-07T09:51:45.616371+00:00</updated>
+  <updated>2026-01-07T09:52:52.005834+00:00</updated>
   <entry>
     <author>
       <name>Yegor Bugayenko</name>
@@ -237,5 +237,5 @@
     <updated>2016-02-20T00:00:00+00:00</updated>
     <dc:date>2016-02-20T00:00:00+00:00</dc:date>
   </entry>
-  <dc:date>2026-01-07T09:51:45.616371+00:00</dc:date>
+  <dc:date>2026-01-07T09:52:52.005834+00:00</dc:date>
 </feed>
