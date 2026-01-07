@@ -14,8 +14,18 @@ We make investment decisions instantly after a one-hour interview ([FAQ]).
 
 ## How to Contribute
 
-Just run `make`.
+This is a hand-made static website.
+To build it, just run this:
+
+```bash
+bundle update
+make
+```
+
+In the absence of errors, the content goes to the `target/` directory.
+You must have [Ruby] 3+ installed.
 
 [SAFE]: https://www.seedramp.com/safe.html
 [FAQ]: https://www.seedramp.com/faq.html
 [SeedRamp]: https://www.seedramp.com
+[Ruby]: https://www.ruby-lang.org/en/
