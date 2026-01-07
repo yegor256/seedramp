@@ -24,7 +24,7 @@
         %p
           Submit this form and we'll email you back,
           to schedule an interview. We reply to all requests.
-        %form{:method=>"POST", :action=>"//formspree.io/apply@seedramp.com"}
+        %form{:method=>"POST", :action=>"//formspree.io/f/xaqnrnaj"}
           %input{:name=>"_next", :type=>"hidden", :value=>"http://www.seedramp.com/thanks.html"}
           %input{:name=>"_format", :type=>"hidden", :value=>"text"}
 
@@ -40,10 +40,10 @@
           %label How much do you need (USD):
           %input{:name=>"amount", :size=>"8", :type=>"number", :required=>"required"}
 
-          %label Where:
-          %input{:name=>"where", :type=>"radio", :value=>"in-person", :checked=>"checked"} Palo Alto, CA (your chances are higher)
-          %br
-          %input{:name=>"where", :type=>"radio", :value=>"online"} Online, over Skype
+          // %label Where:
+          // %input{:name=>"where", :type=>"radio", :value=>"in-person", :checked=>"checked"} Palo Alto, CA (your chances are higher)
+          // %br
+          // %input{:name=>"where", :type=>"radio", :value=>"online"} Online, over Skype
 
           %label When:
           %input{:name=>"when", :type=>"radio", :value=>"ASAP"} ASAP
