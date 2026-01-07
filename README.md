@@ -25,7 +25,13 @@ make
 In the absence of errors, the content goes to the `target/` directory.
 You must have [Ruby] 3+ installed.
 
+Once your changes go to the `master` branch,
+  GitHub Actions automatically deploys a new version of the site to the
+  `gh-pages` branch, which makes them published to the
+  [GitHub Pages].
+
 [SAFE]: https://www.seedramp.com/safe.html
 [FAQ]: https://www.seedramp.com/faq.html
 [SeedRamp]: https://www.seedramp.com
 [Ruby]: https://www.ruby-lang.org/en/
+[GitHub Pages]: https://pages.github.com/
