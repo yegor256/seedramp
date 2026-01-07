@@ -24,7 +24,7 @@ rss = RSS::Maker.make('atom') do |atom|
         puts xml
         published_content = xml.xpath('//meta[@name="published"]/@content')[0]
         time = published_content ? Time.parse(published_content.to_s) : Time.now
-        url = file.gsub(%r{^target/}, 'http://www.seedramp.com/')
+        url = file.gsub(%r{^target/}, 'https://www.seedramp.com/')
         item.id = url
         item.link = url
         item.title = xml.xpath('//title/text()')

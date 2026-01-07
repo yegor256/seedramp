@@ -23,7 +23,7 @@ mood, we started.
 </div>
 
 **Product**.
-[LegalRobot](http://www.legalrobot.com) is a hosted software solution for parsing legal documents
+[LegalRobot](https://www.legalrobot.com) is a hosted software solution for parsing legal documents
 and finding abnormalities within them. That's how I understood it, at least. You can
 upload a PDF contract and in a few seconds get a summary of what
 looks suspicious. For example, "clause 8.3 is too much against the buyer."
@@ -42,7 +42,7 @@ bringing his product to users.
 **Competition**.
 There are a few companies that are technically doing the exact same thing. However,
 according to Dan, they are all focused on lawyers. Their target users
-are attorneys, while [LegalRobot](http://www.legalrobot.com)
+are attorneys, while [LegalRobot](https://www.legalrobot.com)
 is for those who want to do those verifications
 without paying legal fees. I truly believe that taking lawyers out of the
 market as much as possible, and replacing them with computer systems, is

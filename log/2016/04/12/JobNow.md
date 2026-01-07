@@ -21,7 +21,7 @@ watch it.
 </div>
 
 **Product**.
-[JobNow](http://www.jobnow.me) is a job interview scheduling platform. When
+[JobNow](https://www.jobnow.me) is a job interview scheduling platform. When
 you need a contractor for a few hours (a waiter, a chef, or a cashier), just
 submit that position to the system and wait. Very soon, some candidates will
 apply and immediately schedule interviews. You won't need to select them,

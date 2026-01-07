@@ -10,7 +10,7 @@ merchants (eg. Five Guys, Yogurtland, Quiznos),
 Thus, I believe they are doing better than I understood from the interview :)
 
 **Intro**.
-As a user, I like the idea of [Privme](http://www.privme.com),
+As a user, I like the idea of [Privme](https://www.privme.com),
 a lot. Listen up, you download an
 app, connect it with your Facebook, Instagram and whatever it is. Then, you
 let it screen your bank account (just like QuickBooks does, for example) and you're
@@ -35,7 +35,7 @@ Groupon.
 </div>
 
 **Product**.
-[Privme](http://www.privme.com) consists of three pieces, as far as I understood
+[Privme](https://www.privme.com) consists of three pieces, as far as I understood
 it: a server side, a mobile app for a buyer and a mobile app for a merchant.
 They all were created by [Lakshmi](https://angel.co/lakshmi-m-kodali),
 [Pavan](https://angel.co/pavan-kumar-rao-cheeti), and there small team of
